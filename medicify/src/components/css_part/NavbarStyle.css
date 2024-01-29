@@ -1,0 +1,86 @@
+/* Navbar part */
+header{
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+    box-shadow: black 0px 0px 2px;
+}
+
+.nav{
+    display: flex;
+    /* justify-content: space-between; */
+    /* background-color: #43ACBA; */
+    background-color: #49bccc;
+    /* height: 4.4em; */
+}
+
+.nav1{
+    display: flex;
+    flex-wrap: wrap;
+    height: 4.2em;
+    transition: all .5s;
+}
+
+.main-list{
+    margin: 12px;
+    margin: 12px 29px;
+    margin-right: 51px;
+}
+
+.main-anchor{
+    color: white;
+    font-weight: 600; 
+    font-size: 30px;
+}
+
+.search{
+    margin: 17px 45px;
+}
+
+.search-bar{
+    padding: 8px 12px;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 39em;
+}
+
+
+
+.nav2{
+    margin-right: 35px;
+    display: flex;
+    margin-left: 282px;
+}
+
+.view{
+    visibility: hidden;
+    margin: 16px 12px;
+    border-radius: 21px;
+    padding: 5px 21px;
+}
+
+.cart{
+    margin: 19px;
+}
+
+.icon{
+    color: white;
+    cursor: pointer;
+    margin: 0px 7px;
+    margin-bottom: 0px;
+}
+
+.icon-2{
+    margin-top: 3px;
+}
+
+.access{
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.signin{
+    margin: 19px;
+}
