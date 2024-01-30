@@ -1,0 +1,54 @@
+.page {
+    margin-top: 92px !important;
+}
+
+.img {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup {
+    margin: 0px;
+    width: 37%;
+    /* width: 50%; */
+}
+
+label {
+    font-size: 12px;
+    color: #43ACBA;
+    font-weight: bold;
+}
+
+span {
+    font-weight: 600;
+    font-size: 21px;
+}
+
+input {
+    width: 60%;
+    font-size: 17px;
+    padding: 5px 7px;
+    /* background: none; */
+    border: none;
+}
+
+/* input:hover {
+    background-color: none;
+    border: none;
+} */
+.butn {
+    background-color: #43ACBA !important;
+    border: none;
+    width: 90%;
+    height: 10%;
+    margin-top: 16px;
+    font-weight: 600;
+}
+.google,.facebook{
+    margin-top: 35px;
+    background-color: transparent;
+    border: 0.2px solid black;
+}
