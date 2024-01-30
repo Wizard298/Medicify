@@ -1,0 +1,29 @@
+.footer{
+    /* background-image: linear-gradient(rgb(93, 184, 165), rgb(200, 46, 33),rgb(126, 53, 166)); */
+    background-image: linear-gradient(rgb(134, 205, 189), rgb(210, 169, 165),rgb(197, 168, 212));
+    height: 23em;
+    padding: 2% 8%;
+    margin-top: 3%;
+}
+
+.columns{
+    display: flex;
+    padding: 3% 0%;
+    border-top:1px solid white ;
+}
+
+.company{
+    width: 20%;
+}
+
+.text{
+    margin: 2% 0%;
+}
+
+.copyright{
+    padding: 2% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top:1px solid white ;
+}

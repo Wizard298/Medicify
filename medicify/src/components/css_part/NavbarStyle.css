@@ -1,30 +1,24 @@
-/* Navbar part */
-header{
+.head{
     position: sticky;
     width: 100%;
     top: 0px;
     z-index: 1;
-    box-shadow: black 0px 0px 2px;
+    box-shadow: black 0px 0px 7px;
 }
 
-.nav{
+.main-nav{
     display: flex;
-    /* justify-content: space-between; */
-    /* background-color: #43ACBA; */
     background-color: #49bccc;
-    /* height: 4.4em; */
 }
 
-.nav1{
+.navbar{
     display: flex;
-    flex-wrap: wrap;
     height: 4.2em;
     transition: all .5s;
 }
 
-.main-list{
-    margin: 12px;
-    margin: 12px 29px;
+.main-head{
+    margin: 18px 29px;
     margin-right: 51px;
 }
 
@@ -34,13 +28,13 @@ header{
     font-size: 30px;
 }
 
-.search{
-    margin: 17px 45px;
+.main-search{
+    margin: 20px 45px;
 }
 
-.search-bar{
+.main-search-bar{
     padding: 8px 12px;
-    border: 1px solid black;
+    border: 1px solid #49bccc;
     border-radius: 7px;
     width: 39em;
 }
@@ -50,29 +44,29 @@ header{
 .nav2{
     margin-right: 35px;
     display: flex;
-    margin-left: 282px;
+    margin-left: 10.35em;
 }
 
-.view{
+/* .view{
     visibility: hidden;
     margin: 16px 12px;
     border-radius: 21px;
     padding: 5px 21px;
-}
+} */
 
-.cart{
+.medicine, .health, .cart, .login{
     margin: 19px;
 }
 
-.icon{
-    color: white;
+.medicine-btn, .health-btn, .cart-btn, .login-btn{
+    padding: 7px 14px;
+    background-color: #49bccc;
+    border: 3px solid white;
+    border-radius: 11px;
     cursor: pointer;
-    margin: 0px 7px;
-    margin-bottom: 0px;
 }
-
-.icon-2{
-    margin-top: 3px;
+.medicine-btn:hover, .health-btn:hover,.cart-btn:hover, .login-btn:hover{
+    background-color: #3098a4;
 }
 
 .access{
@@ -81,6 +75,3 @@ header{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.signin{
-    margin: 19px;
-}

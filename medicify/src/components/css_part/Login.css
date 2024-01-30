@@ -1,37 +1,59 @@
 .page {
-    margin-top: 92px !important;
+    margin-top: 5em;
+    display: flex;
 }
 
-.img {
-    width: 50%;
+.img-page {
+    width: 51%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
-.signup {
+.medicify-heading{
+    font-size: 3em;
+    font-weight:normal;
+}
+
+.login-img{
+    margin-top: 2em;
+    width: 75%;
+    /* box-shadow: black 0px 0px 1px; */
+}
+
+.signup-page {
     margin: 0px;
     width: 37%;
-    /* width: 50%; */
 }
 
-label {
+.signin-heading{
+    font-size: 2em;
+    font-weight:normal;
+}
+
+.para-signin{
+    margin-top: 1em;
+}
+
+.phnum{
+    margin-top: 2.5em;
+}
+
+.phnum-label {
     font-size: 12px;
     color: #43ACBA;
     font-weight: bold;
 }
 
-span {
+.digit {
     font-weight: 600;
     font-size: 21px;
 }
 
-input {
+.num{
     width: 60%;
     font-size: 17px;
     padding: 5px 7px;
-    /* background: none; */
     border: none;
 }
 
@@ -39,16 +61,39 @@ input {
     background-color: none;
     border: none;
 } */
-.butn {
-    background-color: #43ACBA !important;
-    border: none;
+
+.otp {
+    margin-top: 1em;
+    background-color: #49bccc;
+    color: white;
+    border: 1px solid white;
     width: 90%;
     height: 10%;
-    margin-top: 16px;
+    cursor: pointer;
+    font-size: 16px;
     font-weight: 600;
+    border-radius: 8px;
 }
+
 .google,.facebook{
-    margin-top: 35px;
-    background-color: transparent;
-    border: 0.2px solid black;
+    background-color: white;
+    border: 0.2px solid #49bccc;
+    border-radius: 10px;
+    padding: 12px 35px;
+    cursor: pointer;
+    margin: 65px 0px;
+}
+
+.facebook{
+    margin-left: 51px;
+}
+
+.anchor-google,.anchor-facebook{
+    font-size: 16px;
+}
+.google:hover,.facebook:hover{
+    background-color: #49bccc;
+    .anchor-google,.anchor-facebook{
+        color: white;
+    }
 }
