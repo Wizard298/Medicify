@@ -2,29 +2,7 @@
     display: flex;
 }
 
-.box1{
-    background-color: white;
-    width: 12%;
-    border: 1px solid white;
-    border-bottom: 1px solid rgb(112, 112, 112, 0.36);
-    border-radius: 0.7em;
-    padding: 1% 2%;
-    margin: 1%;
-}
 
-.categories-box1{
-    font-size: 1.3em;
-    /* font-weight:normal; */
-}
-
-.link-box1{
-    margin: 17% 0%;
-}
-
-.link:hover{
-    color: rgb(19, 18, 18);
-    text-decoration: underline;
-}
 
 .box2{
     display: flex;
@@ -33,10 +11,12 @@
     width: 84%;
     padding: 1%;
     margin: 1%;
+    /* margin-top: 0; */
     border: 1px solid rgb(112, 112, 112, 0.36);
+    /* border: 1px solid white; */
     border-radius: 0.7em;
 }
 
 .edit-btn{
-    padding: 3% 33%;
+    padding: 3% 33%!important;
 }

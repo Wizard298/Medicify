@@ -5,8 +5,8 @@ import '../css_part/Health.css'
 function Medicine() {
   return (
     <>
-    
-    <div className="container">
+
+      <div className="container">
         <div className="cart-img">
           <img
             src="https://www.netmeds.com/images/product-v1/150x150/112125/vicks_vaporub_5_ml_0.jpg"

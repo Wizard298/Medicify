@@ -1,9 +1,14 @@
-.cart-heading{
-    font-size: 2.1em;
-    font-weight:normal;
-    padding: 1% 1.5%;
-    /* margin: 1% 1.5%; */
+.list-heading{
     background-color: white;
+    width: 84%;
+    /* border: 1px solid rgba(112,112,112,.38); */
+    border: 1px solid white;
+    border-radius: 0.3em;
+    margin-left: 15%;
+    margin-top: 0.5em;
+    padding: 1% 2%;
+    font-size: 2.1em;
+    font-weight:500;
 }
 
 .cart-main{
@@ -54,9 +59,10 @@
 }
 
 .cart-discount{
-    color: #ef4281;
+    /* color: #ef4281; */
+    color: green;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 500;
     margin: 1.5%;
 }
 

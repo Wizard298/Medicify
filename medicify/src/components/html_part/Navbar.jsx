@@ -26,7 +26,7 @@ function Navbar() {
                     <button className='medicine-btn'><Link className="access" to="/">Home</Link></button>
                 </div>
                 <div className="health">
-                    <button className='health-btn'><Link className="access" to="/health">Health</Link></button>
+                    <button className='health-btn'><Link className="access" to="/health">Medicine</Link></button>
                 </div>
 
                 <div className="cart">
