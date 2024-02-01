@@ -1,6 +1,7 @@
 .page {
-    margin-top: 5em;
+    padding-top: 5em;
     display: flex;
+    background-color: white;
 }
 
 .img-page {

@@ -1,0 +1,252 @@
+.slide-img{
+    margin: 3% 0%;
+    padding: 0% 1%;
+}
+
+.silde-img-1{
+    width: 100%;
+}
+
+
+/* Trending Part */
+.advertisement{
+    margin: 3% 0%;
+    padding: 0% 1%;
+}
+
+.trending-heading{
+    font-size: 2.1em;
+    font-weight:normal;
+    padding: 0% 1%;
+    /* margin: 1% 1.5%; */
+}
+
+.trending-images{
+    margin-top: 2%;
+    display: flex;
+    overflow: scroll;
+}
+
+/* .div-img1{
+    width: 100%;
+} */
+
+.div-img2{
+    /* width: 100%; */
+    margin-left: 1%;
+}
+
+.trending-img-1{
+    border: 1px solid white;
+    border-radius: 3%;
+    /* width: 100%; */
+}
+
+.trending-img-2{
+    border: 1px solid white;
+    border-radius: 3%;
+    margin-left: 1%;
+    /* width: 100%; */
+}
+
+
+
+
+/* Fever-Cart */
+.fever-cart{
+    /* background-image: linear-gradient(rgb(134, 205, 189), rgb(210, 169, 165),rgb(197, 168, 212)); */
+    background-image: linear-gradient(rgb(208, 255, 244), rgb(255, 208, 203),rgb(197, 168, 212));
+    padding: 1%;
+    box-shadow: black 0px 0px 1px;
+}
+
+.fever-heading{
+    font-size: 2.1em;
+    font-weight:normal;
+    padding: 0% 1%;
+    /* color: white; */
+}
+
+.cart-collection{
+    /* padding-left: 12%; */
+    display: flex;
+}
+
+.cart-container{
+    background-color: white;
+    border: 1px solid rgba(112,112,112,.38);
+    /* width: 20%; */
+    width: 18%;
+    padding: 25px 8px;
+    margin: 1%;
+    border-radius: 2%;
+    /* box-shadow: black 0px 0px 1px; */
+}
+
+.cart-img-home{
+    display: flex;
+    justify-content: center;
+}
+
+.cart-para-home{
+    text-align: center;
+    font-size: 18px;
+    color: #151b39;
+    font-weight:500;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+.cart-italic-home{
+    font-style: italic;
+    color: #6f7284;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+.cart-price-home{
+    font-size: 14px;
+    /* font-family: LatoBold; */
+    color: #6f7284
+}
+
+.cart-discount-home{
+    /* color: #ef4281; */
+    font-size: 16px;
+    font-weight: 490;
+    margin: 1.5%;
+}
+
+.main-cart-btn-home{
+    margin-top: 10%;
+    background-color: #49bccc;
+    padding: 3% 32%;
+    border: 1px solid white;
+    border-radius: 7px;
+    cursor: pointer;
+    color: white;
+    font-weight:500;
+    font-size: 17px;
+}
+
+
+/* Health Concerns */
+.health-concerns{
+    background-color: white;
+    box-shadow: black 0px 0px 3px;
+    margin: 4% 1%;
+    border: 1px solid white;
+    border-radius: 0.7em;
+    /* padding: 0% 1%; */
+}
+
+.health-heading{
+    padding: 0% 2%;
+    padding-top: 1%;
+    font-size: 2.1em;
+    font-weight:normal;
+}
+
+.health-images{
+    display: flex;
+    margin-top: 2%;
+    padding-bottom: 2%;
+}
+
+.health-img-1{
+    width: 23%;
+    cursor: pointer;
+    margin: 0% 2%;
+    padding: 2% 0%;
+    border: 1px solid rgba(112,112,112,.38);
+    border-radius: 7%;
+    box-shadow: black 0px 0px 1px;
+    text-align: center;
+}
+
+.health-img-1 img{
+    width: 11em;
+}
+
+.health-para{
+    text-align: center;
+    margin-top: 11%;
+}
+
+
+
+
+/* Fitness Cart */
+.fitness{
+    background-image: linear-gradient(rgb(208, 255, 244), rgb(255, 229, 226),rgb(197, 168, 212));
+    padding: 1%;
+    box-shadow: black 0px 0px 1px;
+}
+
+
+
+
+/* Categories in focus */
+.categories{
+    margin: 4% 1%;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 0.7em;
+    box-shadow: black 0px 0px 3px;
+}
+
+.categories-heading{
+    font-size: 2.1em;
+    font-weight:normal;
+    padding: 1.2% 1.5%;
+}
+
+.cat-images{
+    display: flex;
+    margin-top: 2%;
+}
+
+.cat-img1 img{
+    width: 90%;
+    cursor: pointer;
+}
+
+/* Personal-Cart */
+.personal-care{
+    background-image: linear-gradient(rgb(208, 255, 244), rgb(255, 229, 226),rgb(197, 168, 212));
+    padding: 1%;
+    box-shadow: black 0px 0px 1px;
+}
+
+
+
+
+.brand-in-focus{
+    margin: 3% 1%;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 0.7em;
+    box-shadow: black 0px 0px 3px;
+}
+
+.brand-heading{
+    font-size: 2.1em;
+    font-weight:normal;
+    padding: 1% 1.7%;
+}
+
+.brand-images{
+    display: flex;
+    margin-top: 2%;
+    padding-bottom: 2%;
+}
+
+.brand-img1{
+    border: 1px solid white;
+    /* border-radius: 0; */
+    /* box-shadow: none; */
+}

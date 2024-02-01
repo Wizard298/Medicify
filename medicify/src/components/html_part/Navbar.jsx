@@ -1,5 +1,6 @@
 import React from 'react'
 import '../css_part/NavbarStyle.css'
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -10,7 +11,7 @@ function Navbar() {
         <div className="main-nav">
             <div className="navbar">
                 <div className="main-head">
-                    <a className="main-anchor" href="/">Medicify</a>
+                    <Link className="main-anchor" to="/">Medicify</Link>
                 </div>
                 <div className="main-search">
                     <input type="search" className="main-search-bar" placeholder="Search for medicine & wellness products" aria-label="Search"/>
@@ -22,18 +23,18 @@ function Navbar() {
                 {/* <button type="button" className="view">View</button> */}
 
                 <div className="medicine">
-                    <button className='medicine-btn'><a className="access" href="/cart">Medicine</a></button>
+                    <button className='medicine-btn'><Link className="access" to="/">Home</Link></button>
                 </div>
                 <div className="health">
-                    <button className='health-btn'><a className="access" href="/cart">Health</a></button>
+                    <button className='health-btn'><Link className="access" to="/health">Health</Link></button>
                 </div>
 
                 <div className="cart">
-                    <button className='cart-btn'><a className="access" href="/cart">Cart</a></button>
+                    <button className='cart-btn'><Link className="access" to="/cart">Cart</Link></button>
                 </div>
 
                 <div className="login">
-                    <button className='login-btn'> <a className="access" href="/login">Sign in/ Sign Up</a> </button> 
+                    <button className='login-btn'> <Link className="access" to="/login">Sign in/ Sign Up</Link> </button> 
                 </div>
             </div>
         </div>
