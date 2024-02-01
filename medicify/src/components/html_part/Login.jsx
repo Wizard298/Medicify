@@ -1,6 +1,7 @@
 import React from "react";
 import '../css_part/Login.css'
 import img from '../images/Signimg.png'
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -24,8 +25,8 @@ function Login() {
           
           <button className="otp">USE OTP</button>
           <br />
-          <button className="google"><a className="anchor-google" href="https://www.google.com">Google</a></button>
-          <button className="facebook"><a className="anchor-facebook" href="https://www.facebook.com">Facebook</a></button>
+          <button className="google"><Link className="anchor-google" to="https://www.google.com">Google</Link></button>
+          <button className="facebook"><Link className="anchor-facebook" to="https://www.facebook.com">Facebook</Link></button>
         </div>
       </div>
 

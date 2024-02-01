@@ -1,13 +1,17 @@
 .cart-heading{
     font-size: 2.1em;
     font-weight:normal;
-    margin: 1% 1.5%;
+    padding: 1% 1.5%;
+    /* margin: 1% 1.5%; */
+    background-color: white;
 }
 
 .cart-main{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 1.5%;
+    padding-top: 1.5%;
+    /* margin-top: 1.5%; */
+    background-color: white;
 }
 
 .container{
