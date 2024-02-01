@@ -7,9 +7,11 @@ import Login from './components/html_part/Login';
 function App() {
   return (
     <>
+    
     <Navbar/>
     <Login/>
     <Cart/>
+
     </>
   );
 }
