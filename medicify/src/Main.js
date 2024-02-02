@@ -8,6 +8,10 @@ import Health from './components/html_part/Health';
 import Login from './components/html_part/Login';
 import Footer from './components/html_part/Footer';
 import Covid from './components/html_part/Covid';
+import Diabetes from './components/html_part/Diabetes';
+import Fitness from './components/html_part/Fitness';
+import CardiacCare from './components/html_part/CardiacCare';
+import Ayurvedic from './components/html_part/Ayurvedic';
 
 
 function App() {
@@ -23,6 +27,10 @@ function App() {
           <Route path="/cart" element={<Cart/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/health/covid" element={<Covid/>} />
+          <Route path="/health/diabetes" element={<Diabetes/>} />
+          <Route path="/health/fitness" element={<Fitness/>} />
+          <Route path="/health/CardiacCare" element={<CardiacCare/>} />
+          <Route path="/health/ayurvedic" element={<Ayurvedic/>} />
         </Routes>
     
     <Footer/>

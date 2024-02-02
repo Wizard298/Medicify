@@ -2,10 +2,14 @@
     /* background-image: linear-gradient(rgb(93, 184, 165), rgb(200, 46, 33),rgb(126, 53, 166)); */
     background-image: linear-gradient(rgb(134, 205, 189), rgb(210, 169, 165),rgb(197, 168, 212));
     /* background-image: linear-gradient(rgb(200, 253, 240), rgb(255, 220, 217),rgb(235, 194, 255)); */
-    height: 23em;
+    /* height: 23em; */
     padding: 2% 8%;
     margin-top: 3%;
     box-shadow: black 0px 0px 3px;
+    /* text-overflow: ellipsis;
+    white-space: nowrap; 
+    overflow: hidden; */
+    padding-bottom: 0;
 }
 
 .columns{
@@ -18,15 +22,25 @@
     width: 20%;
 }
 
+.heading h4{
+    font-size: 1.1vw;
+    font-weight: 650;
+}
+
 .text{
     margin: 2% 0%;
+    font-size: 1vw;
 }
 
 .text a:hover{
     text-decoration: underline;
 }
 
+.get-a-para{
+    font-size: 1.1vw;
+}
 .copyright{
+    font-size: 1.3vw;
     padding: 2% 0%;
     display: flex;
     justify-content: center;
