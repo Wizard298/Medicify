@@ -42,7 +42,7 @@ function Footer() {
           </div>
           <div className="company">
             <div className="heading"> <h4><Link to="/">SUBSCRIBE TO OUR NEWSLETTER</Link></h4> </div>
-            <p>Get a free subscription to our health and fitness tip and stay tuned to our latest offers</p>
+            <p className="get-a-para">Get a free subscription to our health and fitness tip and stay tuned to our latest offers</p>
           </div>
         </div>
         <div className="copyright">

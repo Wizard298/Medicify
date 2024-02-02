@@ -1,7 +1,7 @@
 .head{
     position: sticky;
     width: 100%;
-    top: 0px;
+    top: 0;
     z-index: 1;
     box-shadow: black 0px 0px 7px;
 }
@@ -9,42 +9,52 @@
 .main-nav{
     display: flex;
     background-color: #49bccc;
+    /* height: 16vh; */
+    padding: 0.8% 0%;
 }
 
 .navbar{
     display: flex;
-    height: 4.2em;
-    transition: all .5s;
+    width: 51%;
+    /* justify-content: center; */
 }
 
 .main-head{
-    margin: 18px 29px;
-    margin-right: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin:0% 5%; */
+    width: 12vw;
 }
 
 .main-anchor{
     color: white;
     font-weight: 600; 
-    font-size: 30px;
+    font-size: 2.2vw;
 }
 
 .main-search{
-    margin: 20px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 5%; */
+    width: 39vw;
 }
 
 .main-search-bar{
-    padding: 8px 12px;
+    width: 36vw;
     border: 1px solid #49bccc;
-    border-radius: 7px;
-    width: 39em;
+    padding: 2% 4%;
+    border-radius: 0.7em;
 }
 
 
 
 .nav2{
-    margin-right: 35px;
     display: flex;
-    margin-left: 10.35em;
+    width: 49vw;
+    /* padding-left: 16%; */
+    justify-content: center;
 }
 
 /* .view{
@@ -55,15 +65,20 @@
 } */
 
 .medicine, .health, .cart, .login{
-    margin: 19px;
+    display: flex;
+    align-items: center;
+    margin: 0% 3%;
 }
 
 .medicine-btn, .health-btn, .cart-btn, .login-btn{
-    padding: 7px 14px;
+    /* padding: 7px 14px; */
+    padding: 0.5vw 1vw;
+    /* padding: 1% 2%; */
     background-color: #49bccc;
     border: 3px solid white;
     border-radius: 11px;
     cursor: pointer;
+    width: 100%;
 }
 .medicine-btn:hover, .health-btn:hover,.cart-btn:hover, .login-btn:hover{
     background-color: #3098a4;

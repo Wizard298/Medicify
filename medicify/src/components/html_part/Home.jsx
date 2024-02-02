@@ -14,16 +14,16 @@ function Home() {
         <h1 className='trending-heading'>Trending Today</h1>
         <div className="trending-images">
             <div className='div-img2'>
-                <img className='trending-img-2' src="https://mercury.akamaized.net/i/f4a8fba4fb508d23265120ce4b1712a8_58400_0.jpg" alt="Error" />
+                <img className='trending-img-1' src="https://mercury.akamaized.net/i/f4a8fba4fb508d23265120ce4b1712a8_58400_0.jpg" alt="Error" />
             </div>
             <div className='div-img2'>
-                <img className='trending-img-2' src="https://mercury.akamaized.net/i/7599ef5d2dbf324dbe28aff4faae4207_58490_0.jpg" alt="Error" />
+                <img className='trending-img-1' src="https://mercury.akamaized.net/i/7599ef5d2dbf324dbe28aff4faae4207_58490_0.jpg" alt="Error" />
             </div>
             <div className='div-img2'>
-                <img className='trending-img-2' src="https://mercury.akamaized.net/i/375696f882a491ee4c7f5fc50352345c_58496_0.jpg" alt="Error" />
+                <img className='trending-img-1' src="https://mercury.akamaized.net/i/375696f882a491ee4c7f5fc50352345c_58496_0.jpg" alt="Error" />
             </div>
             <div className='div-img2'>
-                <img className='trending-img-2' src="https://mercury.akamaized.net/i/38f3cd55c553ecaf82aa43e729ec2765_58424_0.jpg" alt="Error" />
+                <img className='trending-img-1' src="https://mercury.akamaized.net/i/38f3cd55c553ecaf82aa43e729ec2765_58424_0.jpg" alt="Error" />
             </div>
             <div className='div-img1'>
                 <img className='trending-img-1' src="https://mercury.akamaized.net/i/84b2d992b0b8d74305fabf4dff5333fd_58505_0.jpg" alt="Error" />
@@ -49,7 +49,9 @@ function Home() {
                     <span className="cart-price-home">MRP:</span>
                     <span className="cart-discount-home">Rs.30.70</span>
                 </div>
-                <button className="main-cart-btn-home">Add to cart</button>
+                <div className='edit-cart-btn-home'>
+                    <button className="main-cart-btn-home">Add to cart</button>
+                </div>
             </div>
             <div className="cart-container">
                 <div className="cart-img-home">
@@ -63,7 +65,9 @@ function Home() {
                     <span className="cart-price-home">MRP: </span>
                     <span className="cart-discount-home">Rs.12.5</span>
                 </div>
-                <button className="main-cart-btn-home">Add to cart</button>
+                <div className='edit-cart-btn-home'>
+                    <button className="main-cart-btn-home">Add to cart</button>
+                </div>
             </div>
             <div className="cart-container">
                 <div className="cart-img-home">
@@ -77,7 +81,9 @@ function Home() {
                     <span className="cart-price-home">MRP: </span>
                     <span className="cart-discount-home">Rs.20.00</span>
                 </div>
-                <button className="main-cart-btn-home">Add to cart</button>
+                <div className='edit-cart-btn-home'>
+                    <button className="main-cart-btn-home">Add to cart</button>
+                </div>
             </div>
             <div className="cart-container">
                 <div className="cart-img-home">
@@ -91,7 +97,9 @@ function Home() {
                     <span className="cart-price-home">MRP: </span>
                     <span className="cart-discount-home">Rs.25.41</span>
                 </div>
-                <button className="main-cart-btn-home">Add to cart</button>
+                <div className='edit-cart-btn-home'>
+                    <button className="main-cart-btn-home">Add to cart</button>
+                </div>
             </div>
             <div className="cart-container">
                 <div className="cart-img-home">
@@ -105,7 +113,9 @@ function Home() {
                     <span className="cart-price-home">MRP: </span>
                     <span className="cart-discount-home">Rs.150.51</span>
                 </div>
-                <button className="main-cart-btn-home">Add to cart</button>
+                <div className='edit-cart-btn-home'>
+                    <button className="main-cart-btn-home">Add to cart</button>
+                </div>
             </div>
         </div>
     </div>
@@ -152,7 +162,9 @@ function Home() {
                     <span className="cart-price-home">MRP:</span>
                     <span className="cart-discount-home">Rs.455.70</span>
                 </div>
-                <button className="main-cart-btn-home">Add to cart</button>
+                <div className='edit-cart-btn-home'>
+                    <button className="main-cart-btn-home">Add to cart</button>
+                </div>
             </div>
             <div className="cart-container">
                 <div className="cart-img-home">
@@ -166,7 +178,9 @@ function Home() {
                     <span className="cart-price-home">MRP: </span>
                     <span className="cart-discount-home">Rs.450</span>
                 </div>
-                <button className="main-cart-btn-home">Add to cart</button>
+                <div className='edit-cart-btn-home'>
+                    <button className="main-cart-btn-home">Add to cart</button>
+                </div>
             </div>
             <div className="cart-container">
                 <div className="cart-img-home">
@@ -180,7 +194,9 @@ function Home() {
                     <span className="cart-price-home">MRP: </span>
                     <span className="cart-discount-home">Rs.2500.00</span>
                 </div>
-                <button className="main-cart-btn-home">Add to cart</button>
+                <div className='edit-cart-btn-home'>
+                    <button className="main-cart-btn-home">Add to cart</button>
+                </div>
             </div>
             <div className="cart-container">
                 <div className="cart-img-home">
@@ -194,7 +210,9 @@ function Home() {
                     <span className="cart-price-home">MRP: </span>
                     <span className="cart-discount-home">Rs.25.41</span>
                 </div>
-                <button className="main-cart-btn-home">Add to cart</button>
+                <div className='edit-cart-btn-home'>
+                    <button className="main-cart-btn-home">Add to cart</button>
+                </div>
             </div>
             <div className="cart-container">
                 <div className="cart-img-home">
@@ -208,7 +226,9 @@ function Home() {
                     <span className="cart-price-home">MRP: </span>
                     <span className="cart-discount-home">Rs.220.51</span>
                 </div>
-                <button className="main-cart-btn-home">Add to cart</button>
+                <div className='edit-cart-btn-home'>
+                    <button className="main-cart-btn-home">Add to cart</button>
+                </div>
             </div>
         </div>
     </div>
@@ -250,7 +270,9 @@ function Home() {
                     <span className="cart-price-home">MRP:</span>
                     <span className="cart-discount-home">Rs.500.75</span>
                 </div>
-                <button className="main-cart-btn-home">Add to cart</button>
+                <div className='edit-cart-btn-home'>
+                    <button className="main-cart-btn-home">Add to cart</button>
+                </div>
             </div>
             <div className="cart-container">
                 <div className="cart-img-home">
@@ -264,7 +286,9 @@ function Home() {
                     <span className="cart-price-home">MRP: </span>
                     <span className="cart-discount-home">Rs.230</span>
                 </div>
-                <button className="main-cart-btn-home">Add to cart</button>
+                <div className='edit-cart-btn-home'>
+                    <button className="main-cart-btn-home">Add to cart</button>
+                </div>
             </div>
             <div className="cart-container">
                 <div className="cart-img-home">
@@ -278,7 +302,9 @@ function Home() {
                     <span className="cart-price-home">MRP: </span>
                     <span className="cart-discount-home">Rs.24.00</span>
                 </div>
-                <button className="main-cart-btn-home">Add to cart</button>
+                <div className='edit-cart-btn-home'>
+                    <button className="main-cart-btn-home">Add to cart</button>
+                </div>
             </div>
             <div className="cart-container">
                 <div className="cart-img-home">
@@ -292,7 +318,9 @@ function Home() {
                     <span className="cart-price-home">MRP: </span>
                     <span className="cart-discount-home">Rs.110.50</span>
                 </div>
-                <button className="main-cart-btn-home">Add to cart</button>
+                <div className='edit-cart-btn-home'>
+                    <button className="main-cart-btn-home">Add to cart</button>
+                </div>
             </div>
             <div className="cart-container">
                 <div className="cart-img-home">
@@ -306,7 +334,9 @@ function Home() {
                     <span className="cart-price-home">MRP: </span>
                     <span className="cart-discount-home">Rs.220.51</span>
                 </div>
-                <button className="main-cart-btn-home">Add to cart</button>
+                <div className='edit-cart-btn-home'>
+                    <button className="main-cart-btn-home">Add to cart</button>
+                </div>
             </div>
         </div>
     </div>
@@ -338,4 +368,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Home;

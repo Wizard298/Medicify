@@ -34,7 +34,7 @@ function Navbar() {
                 </div>
 
                 <div className="login">
-                    <button className='login-btn'> <Link className="access" to="/login">Sign in/ Sign Up</Link> </button> 
+                    <button className='login-btn'> <Link className="access" to="/login">Login</Link> </button> 
                 </div>
             </div>
         </div>
