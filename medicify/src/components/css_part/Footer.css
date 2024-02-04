@@ -6,9 +6,6 @@
     padding: 2% 8%;
     margin-top: 3%;
     box-shadow: black 0px 0px 3px;
-    /* text-overflow: ellipsis;
-    white-space: nowrap; 
-    overflow: hidden; */
     padding-bottom: 0;
 }
 
@@ -23,13 +20,19 @@
 }
 
 .heading h4{
-    font-size: 1.1vw;
+    font-size: 1.1em;
     font-weight: 650;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    overflow: hidden;
 }
 
 .text{
     margin: 2% 0%;
-    font-size: 1vw;
+    font-size: 1em;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    overflow: hidden;
 }
 
 .text a:hover{
@@ -37,13 +40,27 @@
 }
 
 .get-a-para{
-    font-size: 1.1vw;
+    font-size: 1em;
+    /* text-overflow: ellipsis; */
+    /* white-space: nowrap;  */
+    /* overflow: hidden; */
 }
 .copyright{
-    font-size: 1.3vw;
+    font-size: 1.2em;
     padding: 2% 0%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-top:1px solid white ;
+}
+
+
+@media only screen and (max-width:600px){
+    .footer{
+        padding: 0;
+    }
+    .company{
+        /* border-right: 1px solid white; */
+        padding: 0% 1%;
+    }
 }
