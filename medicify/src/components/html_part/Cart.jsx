@@ -11,7 +11,7 @@ function Cart() {
           <h1 className="cart-link-heading">Your cart is empty!</h1>
           <p>You have added zero items in the cart. Explore</p>
           <p> and add products you like!</p>
-          <button className="link-cart-buttn"><Link to="/health">Click to Add Cart</Link></button>
+          <Link to="/health"><button className="link-cart-buttn">Click to Add Cart</button></Link>
       </div>
     </div>
 
