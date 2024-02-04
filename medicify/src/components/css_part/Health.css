@@ -1,3 +1,17 @@
+.list-heading{
+    background-color: white;
+    width: 84%;
+    /* border: 1px solid rgba(112,112,112,.38); */
+    border: 1px solid white;
+    border-radius: 0.3em;
+    margin-left: 15%;
+    margin-top: 0.5em;
+    padding: 1% 2%;
+    font-size: 2.1em;
+    font-weight:500;
+}
+
+
 .box{
     display: flex;
 }
@@ -7,6 +21,8 @@
 .box2{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    overflow: scroll;
     background-color: white;
     width: 84%;
     padding: 1%;
