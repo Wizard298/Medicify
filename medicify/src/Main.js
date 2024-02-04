@@ -12,6 +12,7 @@ import Diabetes from './components/html_part/Diabetes';
 import Fitness from './components/html_part/Fitness';
 import CardiacCare from './components/html_part/CardiacCare';
 import Ayurvedic from './components/html_part/Ayurvedic';
+import SignUp from './components/html_part/SignUp';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/health" element={<Health/>} />
           <Route path="/cart" element={<Cart/>} />
           <Route path="/login" element={<Login/>} />
+          <Route path="/signup" element={<SignUp/>} />
           <Route path="/health/covid" element={<Covid/>} />
           <Route path="/health/diabetes" element={<Diabetes/>} />
           <Route path="/health/fitness" element={<Fitness/>} />

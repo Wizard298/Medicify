@@ -15,25 +15,27 @@ function Login() {
 
         <div className="signup-page">
           <div className="sign-login-toogle">
-            <h2 className="login-heading"><Link to="/login">Login</Link> </h2>
-            <h2 className="signup-heading"><Link to="/login">SignUp</Link> </h2>
+            <Link className='login-link-heading hovering' to="/login"><h2 className="login-heading">Login</h2></Link> 
+            <Link className='signup-link-heading' to="/signup"><h2 className="signup-heading">Sign Up</h2></Link> 
+            {/* <h2 className="signup-heading"><Link to="/signup">SignUp</Link> </h2> */}
           </div>
           
 
           <div className="lo-si-component">
-            <p className="para-signin"> Sign up or Sign in to access your orders,special offers, health tips
+            <p className="para-signin"> Login or SignUp to access your orders,special offers, health tips
               and more! </p>
             <div className="phnum">
-              <label className="phnum-label" htmlFor="number">E-MAIL</label>
+
+              {/* <label className="phnum-label" htmlFor="email">E-Mail</label> */}
+              {/* <br /> */}
+              <input type="email" className="num-edit" name="email"  id="number" placeholder="Email id"/>
               <br />
-              {/* <span className="digit">+91</span>{" "} */}
-              <input type="email" className="num" name="number"  id="number" placeholder="Enter your email id"/>
+              {/* <label className="phnum-label" htmlFor="number">Password</label> */}
               <br />
-              <br />
-              <label className="phnum-label" htmlFor="number">Password</label>
-              <br />
-              <input type="password" className="num" name="number"  id="number" placeholder="Enter your password"/>
+              <input type="password" className="num-edit" name="number"  id="number" placeholder="Password"/>
+
             </div>
+              <br />
             <button className="otp">Login</button>
             <br />
             <br />

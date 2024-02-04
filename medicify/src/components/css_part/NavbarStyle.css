@@ -8,14 +8,15 @@
 
 .main-nav{
     display: flex;
+    flex-wrap: wrap;
     background-color: #49bccc;
-    /* height: 16vh; */
     padding: 0.8% 0%;
 }
 
 .navbar{
     display: flex;
-    width: 51%;
+    /* width: 51%; */
+    width: 51em;
     /* justify-content: center; */
 }
 
@@ -24,13 +25,13 @@
     align-items: center;
     justify-content: center;
     /* margin:0% 5%; */
-    width: 12vw;
+    width: 12em;
 }
 
 .main-anchor{
     color: white;
     font-weight: 600; 
-    font-size: 2.2vw;
+    font-size: 2.1em;
 }
 
 .main-search{
@@ -38,11 +39,12 @@
     align-items: center;
     justify-content: center;
     /* margin-left: 5%; */
-    width: 39vw;
+    /* width: 39vw;
+    width: 77%; */
 }
 
 .main-search-bar{
-    width: 36vw;
+    width: 43em;
     border: 1px solid #49bccc;
     padding: 2% 4%;
     border-radius: 0.7em;
@@ -52,9 +54,10 @@
 
 .nav2{
     display: flex;
-    width: 49vw;
+    width: 35em;
+    flex-wrap: wrap;
     /* padding-left: 16%; */
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 /* .view{
@@ -88,5 +91,15 @@
     color: white;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+@media only screen and (max-width:600px){
+    .main-head{
+        width: 0em;
+    }
+    .main-anchor{
+        font-size: 0;
+    }
 }
 
