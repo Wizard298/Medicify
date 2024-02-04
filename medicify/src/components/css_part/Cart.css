@@ -1,7 +1,14 @@
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .cart-link{
     background-color: white;
-    margin: 6% 17%;
-    padding: 1% 0%;
+    margin: 32px 0px;
+    width: 29em;
+    padding: 18px 8px;
     border: 1px solid rgb(112, 112, 112, 0.36);
     border-radius: 1em;
     text-align: center;
@@ -15,12 +22,12 @@
 }
 
 .link-cart-buttn{
-    padding: 0.7% 1.5%;
+    padding: 7px 12px;
     cursor: pointer;
     font-size: 1.2em;
     background: white;
     border: 2px solid #49bccc;
-    margin: 2%;
+    margin: 16px;
     border-radius: 1em;
 }
 

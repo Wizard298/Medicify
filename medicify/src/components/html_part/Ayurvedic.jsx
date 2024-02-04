@@ -49,7 +49,7 @@ function Ayurvedic() {
                 />
                 </div>
                 <p className="cart-para">Lama Isobael Granules 200 gm</p>
-                <p className="cart-italic">Mkt: Lama Pharmaceuticals</p>
+                <p className="cart-italic ">Mkt: Lama Pharmaceuticals</p>
                 <div className="price">
                 <span className="cart-price">MRP:</span>
                 <span className="cart-discount">Rs.238.00</span>
