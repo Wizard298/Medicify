@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css_part/NavbarStyle.css'
 import { Link } from 'react-router-dom';
+import image from '../images/navbar-icon.png'
 
 function Navbar() {
   return (
@@ -11,6 +12,7 @@ function Navbar() {
         <div className="main-nav">
             <div className="navbar">
                 <div className="main-head">
+                    <img className='nav-icon' src={image} alt="Error" />
                     <Link className="main-anchor" to="/">Medicify</Link>
                 </div>
                 <div className="main-search">
@@ -23,18 +25,18 @@ function Navbar() {
                 {/* <button type="button" className="view">View</button> */}
 
                 <div className="medicine">
-                    <button className='medicine-btn'><Link className="access" to="/">Home</Link></button>
+                    <Link className="access" to="/"><button className='medicine-btn nav-hover1'>Home</button></Link>
                 </div>
                 <div className="health">
-                    <button className='health-btn'><Link className="access" to="/health">Medicine</Link></button>
+                    <Link className="access" to="/health"><button className='health-btn nav-hover2'>Medicine</button></Link>
                 </div>
 
                 <div className="cart">
-                    <button className='cart-btn'><Link className="access" to="/cart">Cart</Link></button>
+                    <Link className="access" to="/cart"><button className='cart-btn nav-hover3'>Cart</button></Link>
                 </div>
 
                 <div className="login">
-                    <button className='login-btn'> <Link className="access" to="/login">Login</Link> </button> 
+                    <Link className="access" to="/login"><button className='login-btn nav-hover4'> Login</button></Link> 
                 </div>
             </div>
         </div>

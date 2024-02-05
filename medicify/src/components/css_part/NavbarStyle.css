@@ -8,7 +8,7 @@
 
 .main-nav{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     background-color: #49bccc;
     padding: 0.8% 0%;
 }
@@ -28,6 +28,10 @@
     width: 12em;
 }
 
+.nav-icon{
+    width: 0;
+}
+
 .main-anchor{
     color: white;
     font-weight: 600; 
@@ -44,20 +48,25 @@
 }
 
 .main-search-bar{
-    width: 43em;
+    /* width: 41em; */
+    width: 40vw;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    overflow: hidden;
     border: 1px solid #49bccc;
     padding: 2% 4%;
     border-radius: 0.7em;
+    height: 3em;
 }
 
 
 
 .nav2{
     display: flex;
-    width: 35em;
-    flex-wrap: wrap;
+    width: 46vw;
+    /* flex-wrap: wrap; */
+    justify-content: center;
     /* padding-left: 16%; */
-    /* justify-content: center; */
 }
 
 /* .view{
@@ -70,36 +79,68 @@
 .medicine, .health, .cart, .login{
     display: flex;
     align-items: center;
-    margin: 0% 3%;
-}
-
-.medicine-btn, .health-btn, .cart-btn, .login-btn{
-    /* padding: 7px 14px; */
-    padding: 0.5vw 1vw;
-    /* padding: 1% 2%; */
-    background-color: #49bccc;
-    border: 3px solid white;
-    border-radius: 11px;
-    cursor: pointer;
-    width: 100%;
-}
-.medicine-btn:hover, .health-btn:hover,.cart-btn:hover, .login-btn:hover{
-    background-color: #3098a4;
+    margin: 0% 2.7%;
 }
 
 .access{
     color: white;
-    font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* .access:hover{
+    background-color: #3098a4;
 
-@media only screen and (max-width:600px){
+} */
+.medicine-btn, .health-btn, .cart-btn, .login-btn{
+    padding: 9px 15px;
+    color: white;
+    font-size: 1.25em;
+    font-weight: 600;
+    /* padding: 1% 2%; */
+    /* padding: 0.5vw 1vw; */
+    background-color: #49bccc;
+    /* border: 3px solid white; */
+    border: none;
+    border-radius: 11px;
+    cursor: pointer;
+    width: 100%;
+}
+/* .nav-hover1{
+    background-color: #3098a4;
+} */
+.medicine-btn:hover, .health-btn:hover,.cart-btn:hover, .login-btn:hover{
+    background-color: #3098a4;
+}
+
+
+
+@media only screen and (max-width:1100px){
+    .main-nav{
+        flex-wrap: wrap;
+        /* height: 0; */
+    }
+    .nav2{
+        display: block;
+    }
+    .medicine-btn, .health-btn, .cart-btn, .login-btn{
+        /* padding: 7px 14px; */
+        text-align: left;
+    }
     .main-head{
-        width: 0em;
+        width: 3em;
+        margin: 0% 3%;
     }
     .main-anchor{
         font-size: 0;
+    }
+
+    .main-search-bar{
+        width: 30em;
+    }
+
+    .nav-icon{
+        width: 35px;
+        cursor: pointer;
     }
 }
 

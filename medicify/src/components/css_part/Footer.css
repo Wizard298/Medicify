@@ -1,3 +1,7 @@
+/* .nav-hover4{
+    background-color: #3098a4;
+} */
+
 .footer{
     /* background-image: linear-gradient(rgb(93, 184, 165), rgb(200, 46, 33),rgb(126, 53, 166)); */
     background-image: linear-gradient(rgb(134, 205, 189), rgb(210, 169, 165),rgb(197, 168, 212));
@@ -41,9 +45,6 @@
 
 .get-a-para{
     font-size: 1em;
-    /* text-overflow: ellipsis; */
-    /* white-space: nowrap;  */
-    /* overflow: hidden; */
 }
 .copyright{
     font-size: 1.2em;
