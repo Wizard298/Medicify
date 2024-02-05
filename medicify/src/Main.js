@@ -1,5 +1,6 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom";
+// import React, { useState } from 'react';
 
 import Navbar from './components/html_part/Navbar';
 import Home from './components/html_part/Home';
@@ -17,13 +18,19 @@ import AddtoCart from './components/html_part/AddtoCart';
 
 
 function App() {
+  // const [activeButton, setActiveButton] = useState('home');
+  // // eslint-disable-next-line
+  // const handleButtonClick = (buttonName) => {
+  //   setActiveButton(buttonName);
+  // };
+
   return (
     <>
     
     <Navbar/>
+    {/* <Navbar activeButton={activeButton} /> */}
 
         <Routes>
-          {/* <Route path="/*" element={<h1>No route found here.</h1>} /> */}
           <Route path="/" element={<Home/>} />
           <Route path="/health" element={<Health/>} />
           <Route path="/cart" element={<Cart/>} />

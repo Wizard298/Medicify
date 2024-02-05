@@ -18,6 +18,7 @@
 .cart-img{
     display: flex;
     justify-content: center;
+    /* width: 15.9em; */
 }
 
 .cart-para{
@@ -64,4 +65,8 @@
     color: white;
     font-weight:500;
     font-size: 17px;
+}
+
+.edit-btn-home{
+    width: 16.5em;
 }

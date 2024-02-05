@@ -1,5 +1,6 @@
 import React from 'react'
 import '../css_part/Medicine.css'
+import { Link } from 'react-router-dom'
 import List from './List'
 
 function Diabetes() {
@@ -27,21 +28,7 @@ function Diabetes() {
             <span className="cart-price">MRP:</span>
             <span className="cart-discount">Rs.493.75</span>
           </div>
-          <button className="main-cart-btn edit-btn">Add to cart</button>
-        </div>
-        <div className="container">
-          <div className="cart-img">
-            <img
-              src="https://www.netmeds.com/images/product-v1/150x150/354458/accu_chek_active_test_strip_100_s_0.jpg" alt="Accu-Chek Active Test Strip 100's"
-            />
-          </div>
-          <p className="cart-para">Accu-Chek Active Test Strip 100's</p>
-          <p className="cart-italic">Mkt: Roche Diabetes Care India Pvt LTD</p>
-          <div className="price">
-            <span className="cart-price">MRP: </span>
-            <span className="cart-discount">Rs.1698.00</span>
-          </div>
-          <button className="main-cart-btn edit-btn">Add to cart</button>
+          <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
         </div>
         <div className="container">
           <div className="cart-img">
@@ -55,7 +42,7 @@ function Diabetes() {
             <span className="cart-price">MRP:</span>
             <span className="cart-discount">Rs.1252.00</span>
           </div>
-          <button className="main-cart-btn edit-btn">Add to cart</button>
+          <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
         </div>
         <div className="container">
           <div className="cart-img">
@@ -69,7 +56,7 @@ function Diabetes() {
             <span className="cart-price">MRP:</span>
             <span className="cart-discount">Rs.984.35</span>
           </div>
-          <button className="main-cart-btn edit-btn">Add to cart</button>
+          <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
         </div>
         <div className="container">
           <div className="cart-img">
@@ -83,7 +70,7 @@ function Diabetes() {
             <span className="cart-price">MRP:</span>
             <span className="cart-discount">Rs.1295.00</span>
           </div>
-          <button className="main-cart-btn edit-btn">Add to cart</button>
+          <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
         </div>
         <div className="container">
           <div className="cart-img">
@@ -97,7 +84,7 @@ function Diabetes() {
             <span className="cart-price">MRP:</span>
             <span className="cart-discount">Rs.995.00</span>
           </div>
-          <button className="main-cart-btn edit-btn">Add to cart</button>
+          <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
         </div>
         <div className="container">
           <div className="cart-img">
@@ -111,7 +98,7 @@ function Diabetes() {
             <span className="cart-price">MRP:</span>
             <span className="cart-discount">Rs.381.00</span>
           </div>
-          <button className="main-cart-btn edit-btn">Add to cart</button>
+          <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
         </div>
         <div className="container">
           <div className="cart-img">
@@ -125,7 +112,7 @@ function Diabetes() {
             <span className="cart-price">MRP:</span>
             <span className="cart-discount">Rs.498.00</span>
           </div>
-          <button className="main-cart-btn edit-btn">Add to cart</button>
+          <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
         </div>
         <div className="container">
           <div className="cart-img">
@@ -139,7 +126,21 @@ function Diabetes() {
             <span className="cart-price">MRP:</span>
             <span className="cart-discount">Rs.153.45</span>
           </div>
-          <button className="main-cart-btn edit-btn">Add to cart</button>
+          <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
+        </div>
+        <div className="container">
+          <div className="cart-img">
+            <img
+              src="https://www.netmeds.com/images/product-v1/150x150/354458/accu_chek_active_test_strip_100_s_0.jpg" alt="Accu-Chek Active Test Strip 100's"
+            />
+          </div>
+          <p className="cart-para">Accu-Chek Active Test Strip 100's</p>
+          <p className="cart-italic">Mkt: Roche Diabetes Care India Pvt LTD</p>
+          <div className="price">
+            <span className="cart-price">MRP: </span>
+            <span className="cart-discount">Rs.1698.00</span>
+          </div>
+          <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
         </div>
       {/* </div> */}
       </div>

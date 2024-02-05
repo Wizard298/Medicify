@@ -1,5 +1,6 @@
 import React from 'react'
 import '../css_part/Medicine.css'
+import { Link } from 'react-router-dom'
 import List from './List'
 
 function Covid() {
@@ -26,7 +27,7 @@ function Covid() {
             <span className="cart-price">MRP:</span>
             <span className="cart-discount">Rs.24.75</span>
           </div>
-          <button className="main-cart-btn edit-btn">Add to cart</button>
+          <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
         </div>
         <div className="container">
           <div className="cart-img">
@@ -40,7 +41,7 @@ function Covid() {
             <span className="cart-price">MRP: </span>
             <span className="cart-discount">Rs.63.00</span>
           </div>
-          <button className="main-cart-btn edit-btn">Add to cart</button>
+          <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
         </div>
         <div className="container">
           <div className="cart-img">
@@ -54,7 +55,7 @@ function Covid() {
             <span className="cart-price">MRP:</span>
             <span className="cart-discount">Rs.210.00</span>
           </div>
-          <button className="main-cart-btn edit-btn">Add to cart</button>
+          <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
         </div>
         <div className="container">
           <div className="cart-img">
@@ -68,7 +69,7 @@ function Covid() {
             <span className="cart-price">MRP:</span>
             <span className="cart-discount">Rs.237.35</span>
           </div>
-          <button className="main-cart-btn edit-btn">Add to cart</button>
+          <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
         </div>
         <div className="container">
           <div className="cart-img">
@@ -82,7 +83,7 @@ function Covid() {
             <span className="cart-price">MRP:</span>
             <span className="cart-discount">Rs.1999.00</span>
           </div>
-          <button className="main-cart-btn edit-btn">Add to cart</button>
+          <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
         </div>
         <div className="container">
           <div className="cart-img">
@@ -96,7 +97,7 @@ function Covid() {
             <span className="cart-price">MRP:</span>
             <span className="cart-discount">Rs.3000.00</span>
           </div>
-          <button className="main-cart-btn edit-btn">Add to cart</button>
+          <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
         </div>
         <div className="container">
           <div className="cart-img">
@@ -110,7 +111,7 @@ function Covid() {
             <span className="cart-price">MRP:</span>
             <span className="cart-discount">Rs.150.00</span>
           </div>
-          <button className="main-cart-btn edit-btn">Add to cart</button>
+          <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
         </div>
       {/* </div> */}
       </div>
