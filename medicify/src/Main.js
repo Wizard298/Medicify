@@ -13,6 +13,7 @@ import Fitness from './components/html_part/Fitness';
 import CardiacCare from './components/html_part/CardiacCare';
 import Ayurvedic from './components/html_part/Ayurvedic';
 import SignUp from './components/html_part/SignUp';
+import AddtoCart from './components/html_part/AddtoCart';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="/cart" element={<Cart/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<SignUp/>} />
+          <Route path="/addtocart" element={<AddtoCart/>} />
           <Route path="/health/covid" element={<Covid/>} />
           <Route path="/health/diabetes" element={<Diabetes/>} />
           <Route path="/health/fitness" element={<Fitness/>} />
