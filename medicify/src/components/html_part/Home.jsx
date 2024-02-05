@@ -1,12 +1,29 @@
 import React from 'react'
 import '../css_part/Home.css'
+import '../css_part/ImgSlide.css'
 import img1 from '../images/img1.avif'
+import img2 from '../images/img2.avif'
+import img3 from '../images/img3.avif'
+import img4 from '../images/img4.jpg'
 
 function Home() {
   return (
     <>
-    <div className="slide-img">
-        <img className='silde-img-1'  src={img1} alt="Error" />
+    <div className='animation-slide'>
+        <figure>
+            <div className="slide-img">
+                <img className='silde-img-1'  src={img1} alt="Error" />
+            </div>
+            <div className="slide-img">
+                <img className='silde-img-1'  src={img2} alt="Error" />
+            </div>
+            <div className="slide-img">
+                <img className='silde-img-1'  src={img3} alt="Error" />
+            </div>
+            <div className="slide-img">
+                <img className='silde-img-1'  src={img4} alt="Error" />
+            </div>
+        </figure>
     </div>
     
 
