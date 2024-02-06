@@ -18,6 +18,10 @@ import AddtoCart from './components/html_part/AddtoCart';
 import AboutUs from './components/html_part/AboutUs';
 import Services from './components/html_part/Services';
 import Contact from './components/html_part/Contact';
+import Weight from './components/html_part/Weight';
+import BoneJoint from './components/html_part/BoneJoint';
+import Caring from './components/html_part/Caring';
+import Lung from './components/html_part/Lung';
 
 
 function App() {
@@ -26,7 +30,6 @@ function App() {
     <>
     
     <Navbar/>
-    {/* <Navbar activeButton={activeButton} /> */}
 
         <Routes>
           <Route path="/" element={<Home/>} />
@@ -40,6 +43,10 @@ function App() {
           <Route path="/health/fitness" element={<Fitness/>} />
           <Route path="/health/CardiacCare" element={<CardiacCare/>} />
           <Route path="/health/ayurvedic" element={<Ayurvedic/>} />
+          <Route path="/health/weight" element={<Weight/>} />
+          <Route path="/health/joint" element={<BoneJoint/>} />
+          <Route path="/health/care" element={<Caring/>} />
+          <Route path="/health/lung" element={<Lung/>} />
           <Route path="/home/aboutus" element={<AboutUs/>} />
           <Route path="/home/services" element={<Services/>} />
           <Route path="/home/contact" element={<Contact/>} />

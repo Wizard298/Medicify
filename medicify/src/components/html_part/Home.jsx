@@ -165,20 +165,28 @@ function Home() {
 
         <div className="health-images">
             <div className="health-img-1">
+            <Link to="/health/weight">
                 <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/weight-care.jpg" alt="Weight Care"/>
                 <p className='health-para'>Weight Care</p>
+            </Link>
             </div>
             <div className="health-img-1">
+            <Link to="/health/joint">
                 <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/bone-and-joint-pain.jpg" alt="Bone And Joint Pain"/>
                 <p className='health-para'>Bone And Joint Pain</p>
+            </Link>
             </div>
             <div className="health-img-1">
+            <Link to="/health">
                 <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/cold-and-fever.jpg" alt="Cold And Fever"/>
                 <p className='health-para'>Cold And Fever</p>
+            </Link>
             </div>
             <div className="health-img-1">
+            <Link to="/health/lung">
                 <img src="https://www.netmeds.com/images/cms/wysiwyg/category/v2/img/lung-care.jpg" alt="Lung Care"/>
                 <p className='health-para'>Lung Care</p>
+            </Link>
             </div>
         </div>
     </div>
@@ -297,16 +305,24 @@ function Home() {
 
         <div className="cat-images">
             <div className="cat-img1">
-                <img src="https://www.netmeds.com/images/category/prod/thumb/ayurvedic.png" alt="" />
+                <Link to="/health/ayurvedic">
+                    <img src="https://www.netmeds.com/images/category/prod/thumb/ayurvedic.png" alt="" />
+                </Link>
             </div>
             <div className="cat-img1">
-                <img src="https://www.netmeds.com/images/category/prod/thumb/sports_supplements.png" alt="" />
+                <Link to="/health/fitness">
+                    <img src="https://www.netmeds.com/images/category/prod/thumb/sports_supplements.png" alt="" />
+                </Link> 
             </div>
             <div className="cat-img1">
-                <img src="https://www.netmeds.com/images/category/v1/525/thumb/body_care_4.png"  alt="" />
+                <Link to="/health/care">
+                    <img src="https://www.netmeds.com/images/category/v1/525/thumb/body_care_4.png"  alt="" />
+                </Link>
             </div>
             <div className="cat-img1">
-                <img src="https://www.netmeds.com/images/category/prod/thumb/orthopaedics.png" alt="" />
+                <Link to="/health/joint">
+                    <img src="https://www.netmeds.com/images/category/prod/thumb/orthopaedics.png" alt="" />
+                </Link>
             </div>
         </div>
     </div>
@@ -424,20 +440,28 @@ function Home() {
 
         <div className="brand-images">
             <div className="health-img-1 brand-img1">
+            <Link to="/health">
                 <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/dabur.jpg?v=14" alt="dabur"/>
                 <p className='health-para'>Dabur</p>
+            </Link>
             </div>
             <div className="health-img-1 brand-img1">
+            <Link to="/health">
                 <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/omnigel.jpg?v=14" alt="Omnigel"/>
                 <p className='health-para'>Omnigel</p>
+            </Link>
             </div>
             <div className="health-img-1 brand-img1">
+            <Link to="/health">
                 <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/volini.jpg?v=14" alt="Volini"/>
                 <p className='health-para'>Volini</p>
+            </Link>
             </div>
             <div className="health-img-1 brand-img1">
+            <Link to="/health">
                 <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/cetaphil.jpg?v=14" alt="Cetaphil"/>
                 <p className='health-para'>Cetaphil</p>
+            </Link>
             </div>
         </div>
     </div>

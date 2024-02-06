@@ -10,11 +10,17 @@
 
 .categories-box1{
     font-size: 1.3em;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    overflow: hidden;
     /* font-weight:normal; */
 }
 
 .link-box1{
     margin: 17% 0%;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    overflow: hidden;
 }
 
 .link:hover{

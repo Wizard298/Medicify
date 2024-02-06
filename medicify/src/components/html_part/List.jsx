@@ -33,6 +33,22 @@ function List() {
         <div className="ayurvedic link-box1">
             <Link className='link' to="/health/ayurvedic">Ayurvedic</Link>
         </div>
+
+        <div className="ayurvedic link-box1">
+            <Link className='link' to="/health/weight">Weight Care</Link>
+        </div>
+
+        <div className="ayurvedic link-box1">
+            <Link className='link' to="/health/joint">Bone and Joint</Link>
+        </div>
+
+        <div className="ayurvedic link-box1">
+            <Link className='link' to="/health/care">Personal Care</Link>
+        </div>
+
+        <div className="ayurvedic link-box1">
+            <Link className='link' to="/health/lung">Lung Care</Link>
+        </div>
     </div>
 
     </>
