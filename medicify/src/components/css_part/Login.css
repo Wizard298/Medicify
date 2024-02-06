@@ -131,23 +131,19 @@ input:focus {
     border: 0.2px solid #49bccc;
     border-radius: 10px;
     padding: 12px 35px;
-    cursor: pointer;
     width: 32%;
+    cursor: pointer;
+    font-size: 16px;
 }
-
 .facebook{
     margin-left: 45px;
 }
-
-.anchor-google,.anchor-facebook{
-    font-size: 16px;
-}
 .google:hover,.facebook:hover{
     background-color: #49bccc;
-    .anchor-google,.anchor-facebook{
-        color: white;
-    }
-}
+    color: white;
+} 
+
+
 
 @media only screen and (max-width:800px){
     .page{

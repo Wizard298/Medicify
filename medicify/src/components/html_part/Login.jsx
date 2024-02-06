@@ -40,8 +40,8 @@ function Login() {
             <br />
             <br />
             <div>
-              <button className="google"><Link className="anchor-google" to="https://www.google.com">Google</Link></button>
-              <button className="facebook"><Link className="anchor-facebook" to="https://www.facebook.com">Facebook</Link></button>
+              <Link className="anchor-google" to="https://www.google.com"><button className="google">Google</button></Link>
+              <Link className="anchor-facebook" to="https://www.facebook.com"><button className="facebook">Facebook</button></Link>
             </div>
           </div>
         </div>

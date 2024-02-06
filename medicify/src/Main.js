@@ -15,14 +15,12 @@ import CardiacCare from './components/html_part/CardiacCare';
 import Ayurvedic from './components/html_part/Ayurvedic';
 import SignUp from './components/html_part/SignUp';
 import AddtoCart from './components/html_part/AddtoCart';
+import AboutUs from './components/html_part/AboutUs';
+import Services from './components/html_part/Services';
+import Contact from './components/html_part/Contact';
 
 
 function App() {
-  // const [activeButton, setActiveButton] = useState('home');
-  // // eslint-disable-next-line
-  // const handleButtonClick = (buttonName) => {
-  //   setActiveButton(buttonName);
-  // };
 
   return (
     <>
@@ -42,6 +40,9 @@ function App() {
           <Route path="/health/fitness" element={<Fitness/>} />
           <Route path="/health/CardiacCare" element={<CardiacCare/>} />
           <Route path="/health/ayurvedic" element={<Ayurvedic/>} />
+          <Route path="/home/aboutus" element={<AboutUs/>} />
+          <Route path="/home/services" element={<Services/>} />
+          <Route path="/home/contact" element={<Contact/>} />
         </Routes>
     
     <Footer/>
