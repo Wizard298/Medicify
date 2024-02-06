@@ -1,13 +1,3 @@
-/* .slide-img{
-    margin: 3% 0%;
-    padding: 0% 1%;
-} */
-
-/* .silde-img-1{
-    width: 100%;
-} */
-
-
 /* Trending Part */
 .advertisement{
     margin: 3% 0%;
@@ -140,9 +130,10 @@
 .main-cart-btn-home{
     margin-top: 10%;
     background-color: #49bccc;
-    padding: 3% 0%;
+    padding: 3.1% 0%;
     /* width: 16.2vw; */
-    width: 16em;
+    /* width: 16em; */
+    width: 15.5em;
     text-align: center;
     border: 1px solid white;
     border-radius: 7px;
@@ -169,13 +160,14 @@
 .health-heading{
     padding: 1% 2%;
     font-size: 2.2em;
-    /* font-size: 2.2vw; */
+    /* text-decoration: underline; */
+    /* color: #49bccc; */
     font-weight:normal;
 }
 
 .health-images{
     display: flex;
-    margin-top: 2%;
+    margin-top: 1.5%;
     padding-bottom: 2%;
     overflow: scroll;
 }
@@ -185,14 +177,14 @@
     cursor: pointer;
     margin: 0% 2%;
     padding: 2% 0%;
-    border: 1px solid rgba(112,112,112,.38);
+    border: 1px solid rgba(112,112,112,.45);
     border-radius: 7%;
-    box-shadow: black 0px 0px 1px;
+    /* box-shadow: black 0px 0px 1px; */
     text-align: center;
 }
 
 .health-img-1 img{
-    width: 12em;
+    width: 11em;
 }
 
 .health-para{
@@ -226,9 +218,10 @@
 .categories-heading{
     /* font-size: 2.1em; */
     /* text-decoration: underline; */
-    font-size: 2.3em;
+    font-size: 2.2em;
     font-weight:normal;
     padding: 1.2% 2%;
+    border-bottom: 1px solid rgb(112, 112, 112, 0.36);
 }
 
 .cat-images{
@@ -238,11 +231,11 @@
 }
 
 .cat-img1{
-    margin: 0% 1.5%;
+    margin: 0% 2.5%;
 }
 
 .cat-img1 img{
-    width: 20em;
+    width: 18em;
     cursor: pointer;
 }
 

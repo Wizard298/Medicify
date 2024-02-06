@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css_part/Medicine.css'
 import List from './List'
+import { Link } from 'react-router-dom'
 
 function CardiacCare() {
   return (
@@ -27,7 +28,7 @@ function CardiacCare() {
                 <span className="cart-price">MRP:</span>
                 <span className="cart-discount">Rs.205.75</span>
                 </div>
-                <button className="main-cart-btn edit-btn">Add to cart</button>
+                <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
             </div>
             <div className="container">
                 <div className="cart-img">
@@ -41,7 +42,7 @@ function CardiacCare() {
                 <span className="cart-price">MRP: </span>
                 <span className="cart-discount">Rs.1215.00</span>
                 </div>
-                <button className="main-cart-btn edit-btn">Add to cart</button>
+                <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
             </div>
             <div className="container">
                 <div className="cart-img">
@@ -55,7 +56,7 @@ function CardiacCare() {
                 <span className="cart-price">MRP:</span>
                 <span className="cart-discount">Rs.248.17</span>
                 </div>
-                <button className="main-cart-btn edit-btn">Add to cart</button>
+                <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
             </div>
             <div className="container">
                 <div className="cart-img">
@@ -69,7 +70,7 @@ function CardiacCare() {
                 <span className="cart-price">MRP:</span>
                 <span className="cart-discount">Rs.1416.35</span>
                 </div>
-                <button className="main-cart-btn edit-btn">Add to cart</button>
+                <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
             </div>
             <div className="container">
                 <div className="cart-img">
@@ -83,7 +84,7 @@ function CardiacCare() {
                 <span className="cart-price">MRP:</span>
                 <span className="cart-discount">Rs.478.00</span>
                 </div>
-                <button className="main-cart-btn edit-btn">Add to cart</button>
+                <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
             </div>
             <div className="container">
                 <div className="cart-img">
@@ -97,7 +98,7 @@ function CardiacCare() {
                 <span className="cart-price">MRP:</span>
                 <span className="cart-discount">Rs.2659.00</span>
                 </div>
-                <button className="main-cart-btn edit-btn">Add to cart</button>
+                <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
             </div>
             <div className="container">
                 <div className="cart-img">
@@ -111,7 +112,7 @@ function CardiacCare() {
                 <span className="cart-price">MRP:</span>
                 <span className="cart-discount">Rs.440.00</span>
                 </div>
-                <button className="main-cart-btn edit-btn">Add to cart</button>
+                <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
             </div>
         {/* </div> */}
         </div>

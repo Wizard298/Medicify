@@ -91,6 +91,8 @@
     background-color: #3098a4;
 
 } */
+
+
 .medicine-btn, .health-btn, .cart-btn, .login-btn{
     padding: 9px 15px;
     color: white;
@@ -105,9 +107,19 @@
     cursor: pointer;
     width: 100%;
 }
-/* .nav-hover1{
+
+.active{
+    padding: 9px 15px;
+    color: white;
+    font-size: 1.25em;
+    font-weight: 600;
     background-color: #3098a4;
-} */
+    border: none;
+    border-radius: 11px;
+    cursor: pointer;
+    width: 100%;
+}
+
 .medicine-btn:hover, .health-btn:hover,.cart-btn:hover, .login-btn:hover{
     background-color: #3098a4;
 }

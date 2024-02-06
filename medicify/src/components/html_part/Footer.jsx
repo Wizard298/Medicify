@@ -9,15 +9,15 @@ function Footer() {
         <div className="columns">
           <div className="company">
             <div className="heading"><h4>COMPANY</h4>  </div>
-            <div className="text"><Link to="/">About Medicify</Link> </div>
-            <div className="text"><Link to="/">Customer</Link> </div>
+            <div className="text"><Link to="/">Home</Link> </div>
+            <div className="text"><Link to="/home/aboutus">About Us</Link> </div>
+            <div className="text"><Link to="/home/services">Services</Link> </div>
+            <div className="text"><Link to="/home/contact">Contact Us</Link> </div>
             <div className="text"><Link to="/">News</Link> </div>
-            <div className="text"><Link to="/">Career</Link> </div>
-            <div className="text"><Link to="/">Contact</Link> </div>
           </div>
           <div className="company">
             <div className="heading"><h4 className="fourth-heading">OUR POLICIES</h4> </div>
-            <div className="text"><Link to="/">Terms and Conditions</Link> </div>
+            <div className="text"><Link to="/">Terms & Conditions</Link> </div>
             <div className="text"><Link to="/">Privacy Policy</Link> </div>
             <div className="text"><Link to="/">Payments Policy</Link> </div>
             <div className="text"><Link to="/">Shipping Policy</Link> </div>
@@ -25,11 +25,12 @@ function Footer() {
           </div>
           <div className="company">
             <div className="heading"> <h4>SHOPPING</h4> </div>
-            <div className="text"><Link to="/">Home</Link> </div>
+            <div className="text"><Link to="/health/fitness">Fitness</Link> </div>
+            <div className="text"><Link to="/health">Medicine</Link> </div>
+            <div className="text"><Link to="/health/CardiacCare">Cardiac-Care</Link> </div>
+            <div className="text"><Link to="/health/ayurvedic">Ayurvedic</Link> </div>
             <div className="text"><Link to="/cart">Cart</Link> </div>
-            <div className="text"><Link to="/health">Health</Link> </div>
-            <div className="text"><Link to="/">Offers/Coupons</Link> </div>
-            <div className="text"><Link to="/">FAQs</Link> </div>
+            {/* <div className="text"><Link to="/">FAQs</Link> </div> */}
           </div>
           <div className="company">
             <div className="heading"> <h4>SOCIAL</h4> </div>

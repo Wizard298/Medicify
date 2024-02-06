@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import Main from './Main';
+// import Practice from './components/html_part/Practice';
 
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,6 +23,7 @@ root.render(
   <BrowserRouter>
   
   <Main />
+  {/* <Practice/> */}
 
   </BrowserRouter>
 );
