@@ -129,6 +129,7 @@
 
 .main-cart-btn-home{
     margin-top: 10%;
+    /* color: black; */
     background-color: #49bccc;
     padding: 3.1% 0%;
     /* width: 16.2vw; */
@@ -142,6 +143,11 @@
     font-weight: 500;
     /* font-size: 17px; */
     font-size: 1em;
+}
+
+.main-cart-btn-home:hover{
+    background-color: #3098a4;
+
 }
 
 
