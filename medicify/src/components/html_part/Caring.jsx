@@ -38,34 +38,16 @@ function Caring() {
                 <div className="cart-img">
                 <Link to="/addtocart">
                     <img
-                    src="https://www.netmeds.com/images/product-v1/150x150/829099/sensodyne_repair_protect_toothpaste_100_gm_0_2.jpg" alt="Sensodyne Repair &amp; Protect Toothpaste 100 gm"
+                    src="https://www.netmeds.com/images/product-v1/150x150/323943/abzorb_dusting_powder_100gm_39756_0_2.jpg" alt="Abzorb Dusting Powder 100gm"
                     />
                 </Link>
                 </div>
                 <Link to="/addtocart">
-                <p className="cart-para">Sensodyne Repair &amp; Protect Toothpaste 100 gm</p>
-                <p className="cart-italic">Mkt: Gsk Consumer Healthcare</p>
-                <div className="price">
-                    <span className="cart-price">Best Price</span>
-                    <span className="cart-discount">Rs.230.00</span>
-                </div>
-                </Link>
-                <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
-            </div>
-            <div className="container">
-                <div className="cart-img">
-                <Link to="/addtocart">
-                    <img
-                    src="https://www.netmeds.com/images/product-v1/150x150/388215/volini_spray_100gm_46243_0_2.jpg" alt="Volini Spray 100gm"
-                    />
-                </Link>
-                </div>
-                <Link to="/addtocart">
-                <p className="cart-para">Volini Spray 100gm</p>
+                <p className="cart-para">Abzorb Dusting Powder 100gm</p>
                 <p className="cart-italic">Mkt: Sun Pharmaceutical Industries Ltd</p>
                 <div className="price">
                     <span className="cart-price">Best Price</span>
-                    <span className="cart-discount">Rs.272.50</span>
+                    <span className="cart-discount">Rs.120.00</span>
                 </div>
                 </Link>
                 <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
@@ -74,16 +56,16 @@ function Caring() {
                 <div className="cart-img">
                 <Link to="/addtocart">
                     <img
-                    src="https://www.netmeds.com/images/product-v1/150x150/896035/digene_acidity_gas_relief_tablets_mint_flavour_15s_85679_0_3.jpg" alt="Digene Acidity &amp; Gas Relief Tablets - Mint Flavour 15's"
+                    src="https://www.netmeds.com/images/product-v1/150x150/952497/garnier_skin_naturals_bright_complete_vitamin_c_uv_serum_cream_45_gm_203328_0_3.jpg" alt="Garnier Bright Complete 3X Vitamin C+Lemon Serum Cream UV 45gm"
                     />
                 </Link>
                 </div>
                 <Link to="/addtocart">
-                <p className="cart-para">Digene Acidity &amp; Gas Relief Tablets - Mint Flavour 15's</p>
-                <p className="cart-italic">Mkt: CIPLA HEALTH LTD</p>
+                <p className="cart-para">Garnier Bright Complete 3X Vitamin C+Lemon Serum Cream UV 45gm</p>
+                <p className="cart-italic">Mkt: Loreal India Pvt Ltd</p>
                 <div className="price">
                     <span className="cart-price">Best Price</span>
-                    <span className="cart-discount">Rs.139.76</span>
+                    <span className="cart-discount">Rs.179.50</span>
                 </div>
                 </Link>
                 <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
@@ -92,16 +74,34 @@ function Caring() {
                 <div className="cart-img">
                 <Link to="/addtocart">
                     <img
-                    src="https://www.netmeds.com/images/product-v1/150x150/828337/cetaphil_oily_skin_cleanser_125ml_120194_0_1.jpg" alt="Cetaphil Oily Skin Cleanser 125ml"
+                    src="https://www.netmeds.com/images/product-v1/150x150/838245/vaseline_intensive_care_cocoa_glow_body_lotion_400_ml_105722_0_1.jpg" alt="Vaseline Intensive Care Cocoa Glow Body Lotion 400 ml"
                     />
                 </Link>
                 </div>
                 <Link to="/addtocart">
-                <p className="cart-para">Cetaphil Oily Skin Cleanser 125ml</p>
+                <p className="cart-para">Vaseline Intensive Care Cocoa Glow Body Lotion 400 ml</p>
+                <p className="cart-italic">Mkt: Hindustan Unilever Limited</p>
+                <div className="price">
+                    <span className="cart-price">Best Price</span>
+                    <span className="cart-discount">Rs.348.76</span>
+                </div>
+                </Link>
+                <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
+            </div>
+            <div className="container">
+                <div className="cart-img">
+                <Link to="/addtocart">
+                    <img
+                    src="https://www.netmeds.com/images/product-v1/150x150/1059239/cetaphil_moisturizing_lotion_sensitive_skin_250_ml_461837_0_0.jpg" alt="Cetaphil Moisturizing Lotion Normal to Combination - Sensitive Skin 250 ml"
+                    />
+                </Link>
+                </div>
+                <Link to="/addtocart">
+                <p className="cart-para">Cetaphil Moisturizing Lotion</p>
                 <p className="cart-italic">Mkt: Galderma India Pvt Ltd</p>
                 <div className="price">
                     <span className="cart-price">Best Price</span>
-                    <span className="cart-discount">Rs.550.76</span>
+                    <span className="cart-discount">Rs.704.76</span>
                 </div>
                 </Link>
                 <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
@@ -110,16 +110,16 @@ function Caring() {
                 <div className="cart-img">
                 <Link to="/addtocart">
                     <img
-                    src="https://www.netmeds.com/images/product-v1/150x150/12787/eno_fruit_salt_powder_orange_flavour_100_gm_0_1.jpg" alt="Eno Fruit Salt Powder - Orange Flavour 100 gm"
+                    src="https://www.netmeds.com/images/product-v1/150x150/827262/bioderma_atoderm_intensive_baume_200_ml_65743_0_1.jpg" alt="Bioderma Atoderm Intensive Baume 200 ml"
                     />
                 </Link>
                 </div>
                 <Link to="/addtocart">
-                <p className="cart-para">Eno Fruit Salt Powder</p>
-                <p className="cart-italic">Mkt: ENO LTD</p>
+                <p className="cart-para">Bioderma Atoderm Intensive Baume 200 ml</p>
+                <p className="cart-italic">Mkt: Naos Skin Care India Pvt Ltd</p>
                 <div className="price">
                     <span className="cart-price">Best Price</span>
-                    <span className="cart-discount">Rs.139.76</span>
+                    <span className="cart-discount">Rs.1513.76</span>
                 </div>
                 </Link>
                 <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
@@ -128,16 +128,16 @@ function Caring() {
                 <div className="cart-img">
                 <Link to="/addtocart">
                     <img
-                    src="https://www.netmeds.com/images/product-v1/150x150/1023384/strepsils_lozenges_ginger_lemon_free_24_lozenges_200s_0_0.jpg" alt="Strepsils Lozenges - Ginger &amp; Lemon 200's + 24's Free"
+                    src="https://www.netmeds.com/images/product-v1/150x150/411653/bioderma_sebium_hydra_moisturizer_for_acne_40_ml_53318_0_2.jpg" alt="Bioderma Sebium Hydra Moisturizer for Acne 40 ml"
                     />
                 </Link>
                 </div>
                 <Link to="/addtocart">
-                <p className="cart-para">Strepsils Lozenges - Ginger &amp; Lemon 200's + 24's Free</p>
-                <p className="cart-italic">Mkt: Strepsils Health LTD</p>
+                <p className="cart-para">Bioderma Sebium Hydra Moisturizer for Acne 40 ml</p>
+                <p className="cart-italic">Mkt: Naos Skin Care India Pvt Ltd</p>
                 <div className="price">
                     <span className="cart-price">Best Price</span>
-                    <span className="cart-discount">Rs.150.00</span>
+                    <span className="cart-discount">Rs.896.25</span>
                 </div>
                 </Link>
                 <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
