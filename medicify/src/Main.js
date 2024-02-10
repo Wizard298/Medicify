@@ -22,6 +22,7 @@ import Weight from './components/html_part/Weight';
 import BoneJoint from './components/html_part/BoneJoint';
 import Caring from './components/html_part/Caring';
 import Lung from './components/html_part/Lung';
+import ScrollToTop from './components/html_part/ScrollToTop';
 
 
 function App() {
@@ -30,6 +31,8 @@ function App() {
     <>
     
     <Navbar/>
+
+    <ScrollToTop/>
 
         <Routes>
           <Route path="/" element={<Home/>} />

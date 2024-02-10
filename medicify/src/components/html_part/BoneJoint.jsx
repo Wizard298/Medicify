@@ -19,14 +19,13 @@ function BoneJoint() {
                 <div className="cart-img">
                 <Link to="/addtocart">
                     <img
-                    src="https://www.netmeds.com/images/product-v1/150x150/112125/vicks_vaporub_5_ml_0.jpg"
-                    alt="error"
+                    src="https://www.netmeds.com/images/product-v1/150x150/1027656/truuth_shoulder_arm_sling_l_472641_0_3.jpg" alt="Truuth Shoulder Arm Sling (L)"
                     />
                 </Link>
                 </div>
                 <Link to="/addtocart">
-                    <p className="cart-para">Vicks Vaporub 5 ml</p>
-                    <p className="cart-italic">Mkt: Procter &amp; Gamble Hygiene And Health Care Limited</p>
+                    <p className="cart-para">Truuth Shoulder Arm Sling (L)</p>
+                    <p className="cart-italic">Mkt: Reliance Retail Limited</p>
                     <div className="price">
                     <span className="cart-price">Best Price</span>
                     <span className="cart-discount">Rs.22.80</span>
@@ -38,16 +37,16 @@ function BoneJoint() {
                 <div className="cart-img">
                 <Link to="/addtocart">
                     <img
-                    src="https://www.netmeds.com/images/product-v1/150x150/412720/omnigel_geltopical_75gm_54223_0_2.jpg" alt="Omnigel Gel(Topical) 75gm"
+                    src="https://www.netmeds.com/images/product-v1/150x150/1027635/truuth_knee_cap_xl_472631_0_5.jpg" alt="Truuth Knee Cap (XL)"
                     />
                 </Link>
                 </div>
                 <Link to="/addtocart">
-                <p className="cart-para">Omnigel Gel(Topical) 75gm</p>
-                <p className="cart-italic">Mkt: CIPLA HEALTH LTD</p>
+                <p className="cart-para">Truuth Knee Cap (XL)</p>
+                <p className="cart-italic">Mkt: Reliance Retial LTD</p>
                 <div className="price">
                     <span className="cart-price">Best Price</span>
-                    <span className="cart-discount">Rs.139.76</span>
+                    <span className="cart-discount">Rs.96.76</span>
                 </div>
                 </Link>
                 <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
@@ -56,16 +55,16 @@ function BoneJoint() {
                 <div className="cart-img">
                 <Link to="/addtocart">
                     <img
-                    src="https://www.netmeds.com/images/product-v1/150x150/388215/volini_spray_100gm_46243_0_2.jpg" alt="Volini Spray 100gm"
+                    src="https://www.netmeds.com/images/product-v1/150x150/15180/moov_pain_relief_specialist_cream_50_gm_0.jpg" alt="Moov Pain Relief Specialist Cream 50 gm"
                     />
                 </Link>
                 </div>
                 <Link to="/addtocart">
-                <p className="cart-para">Volini Spray 100gm</p>
-                <p className="cart-italic">Mkt: Sun Pharmaceutical Industries Ltd</p>
+                <p className="cart-para">Moov Pain Relief Specialist Cream 50 gm</p>
+                <p className="cart-italic">Mkt: Reckitt Benckiser Healthcare India Private Limited</p>
                 <div className="price">
                     <span className="cart-price">Best Price</span>
-                    <span className="cart-discount">Rs.272.50</span>
+                    <span className="cart-discount">Rs.205.50</span>
                 </div>
                 </Link>
                 <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
@@ -74,16 +73,16 @@ function BoneJoint() {
                 <div className="cart-img">
                 <Link to="/addtocart">
                     <img
-                    src="https://www.netmeds.com/images/product-v1/150x150/896035/digene_acidity_gas_relief_tablets_mint_flavour_15s_85679_0_3.jpg" alt="Digene Acidity &amp; Gas Relief Tablets - Mint Flavour 15's"
+                    src="https://www.netmeds.com/images/product-v1/150x150/860331/amrutanjan_advanced_back_pain_roll_on_50_ml_0_0.jpg" alt="Amrutanjan Advanced Back Pain + Roll-On 50 ml"
                     />
                 </Link>
                 </div>
                 <Link to="/addtocart">
-                <p className="cart-para">Digene Acidity &amp; Gas Relief Tablets - Mint Flavour 15's</p>
-                <p className="cart-italic">Mkt: CIPLA HEALTH LTD</p>
+                <p className="cart-para">Amrutanjan Advanced Back Pain </p>
+                <p className="cart-italic">Mkt: Amrutanajan LTD</p>
                 <div className="price">
                     <span className="cart-price">Best Price</span>
-                    <span className="cart-discount">Rs.139.76</span>
+                    <span className="cart-discount">Rs.80.76</span>
                 </div>
                 </Link>
                 <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
@@ -92,16 +91,16 @@ function BoneJoint() {
                 <div className="cart-img">
                 <Link to="/addtocart">
                     <img
-                    src="https://www.netmeds.com/images/product-v1/150x150/828337/cetaphil_oily_skin_cleanser_125ml_120194_0_1.jpg" alt="Cetaphil Oily Skin Cleanser 125ml"
+                    src="https://www.netmeds.com/images/product-v1/150x150/829100/iodex_body_pain_expert_40_gm_0_1.jpg" alt="Iodex Body Pain Expert 40 gm"
                     />
                 </Link>
                 </div>
                 <Link to="/addtocart">
-                <p className="cart-para">Cetaphil Oily Skin Cleanser 125ml</p>
-                <p className="cart-italic">Mkt: Galderma India Pvt Ltd</p>
+                <p className="cart-para">Iodex Body Pain Expert 40 gm</p>
+                <p className="cart-italic">Mkt: Gsk Consumer Healthcare</p>
                 <div className="price">
                     <span className="cart-price">Best Price</span>
-                    <span className="cart-discount">Rs.550.76</span>
+                    <span className="cart-discount">Rs.170.76</span>
                 </div>
                 </Link>
                 <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
@@ -110,16 +109,16 @@ function BoneJoint() {
                 <div className="cart-img">
                 <Link to="/addtocart">
                     <img
-                    src="https://www.netmeds.com/images/product-v1/150x150/12787/eno_fruit_salt_powder_orange_flavour_100_gm_0_1.jpg" alt="Eno Fruit Salt Powder - Orange Flavour 100 gm"
+                    src="https://www.netmeds.com/images/product-v1/150x150/407464/tynor_ankle_support_neoprene_one_size_j_12_0_2.jpg" alt="Tynor Ankle Support (Neoprene) (One Size) (J 12)"
                     />
                 </Link>
                 </div>
                 <Link to="/addtocart">
-                <p className="cart-para">Eno Fruit Salt Powder</p>
-                <p className="cart-italic">Mkt: ENO LTD</p>
+                <p className="cart-para">Tynor Ankle Support</p>
+                <p className="cart-italic">Mkt: Tynor Orthotics Private Limited</p>
                 <div className="price">
                     <span className="cart-price">Best Price</span>
-                    <span className="cart-discount">Rs.139.76</span>
+                    <span className="cart-discount">Rs.772.76</span>
                 </div>
                 </Link>
                 <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
@@ -128,16 +127,16 @@ function BoneJoint() {
                 <div className="cart-img">
                 <Link to="/addtocart">
                     <img
-                    src="https://www.netmeds.com/images/product-v1/150x150/1023384/strepsils_lozenges_ginger_lemon_free_24_lozenges_200s_0_0.jpg" alt="Strepsils Lozenges - Ginger &amp; Lemon 200's + 24's Free"
+                    src="https://www.netmeds.com/images/product-v1/150x150/964619/tynor_walker_boot_air_m_d_51_0_0.jpg" alt="Tynor Walker Boot Air (M) (D 51)"
                     />
                 </Link>
                 </div>
                 <Link to="/addtocart">
-                <p className="cart-para">Strepsils Lozenges - Ginger &amp; Lemon 200's + 24's Free</p>
-                <p className="cart-italic">Mkt: Strepsils Health LTD</p>
+                <p className="cart-para">Tynor Walker Boot Air (M) (D 51)</p>
+                <p className="cart-italic">Mkt: Tynor Orthotics Private Limited</p>
                 <div className="price">
                     <span className="cart-price">Best Price</span>
-                    <span className="cart-discount">Rs.150.00</span>
+                    <span className="cart-discount">Rs.3160.00</span>
                 </div>
                 </Link>
                 <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>

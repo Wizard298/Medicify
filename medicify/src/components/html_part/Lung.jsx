@@ -20,17 +20,16 @@ function Lung() {
                 <div className="cart-img">
                 <Link to="/addtocart">
                     <img
-                    src="https://www.netmeds.com/images/product-v1/150x150/112125/vicks_vaporub_5_ml_0.jpg"
-                    alt="error"
+                    src="https://www.netmeds.com/images/product-v1/150x150/363656/pankajakasthuri_breathe_easy_granules_400_gm_43929_0_2.jpg" alt="Pankajakasthuri Breathe Easy Granules 400 gm"
                     />
                 </Link>
                 </div>
                 <Link to="/addtocart">
-                    <p className="cart-para">Vicks Vaporub 5 ml</p>
-                    <p className="cart-italic">Mkt: Procter &amp; Gamble Hygiene And Health Care Limited</p>
+                    <p className="cart-para">Pankajakasthuri Breathe Easy Granules 400 gm</p>
+                    <p className="cart-italic">Mkt: Pankajakasthuri Herbals India Pvt Ltd</p>
                     <div className="price">
                     <span className="cart-price">Best Price</span>
-                    <span className="cart-discount">Rs.22.80</span>
+                    <span className="cart-discount">Rs.298.80</span>
                     </div>
                 </Link>
                 <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
@@ -39,13 +38,13 @@ function Lung() {
                 <div className="cart-img">
                 <Link to="/addtocart">
                     <img
-                    src="https://www.netmeds.com/images/product-v1/150x150/412720/omnigel_geltopical_75gm_54223_0_2.jpg" alt="Omnigel Gel(Topical) 75gm"
+                    src="https://www.netmeds.com/images/product-v1/150x150/410105/pankajakasthuri_breathe_easy_syrup_200_ml_0.jpg" alt="Pankajakasthuri Breathe Easy Syrup 200 ml"
                     />
                 </Link>
                 </div>
                 <Link to="/addtocart">
-                <p className="cart-para">Omnigel Gel(Topical) 75gm</p>
-                <p className="cart-italic">Mkt: CIPLA HEALTH LTD</p>
+                <p className="cart-para">Pankajakasthuri Breathe Easy Syrup 200 ml</p>
+                <p className="cart-italic">Mkt: Pankajakasthuri Herbals India Pvt Ltd</p>
                 <div className="price">
                     <span className="cart-price">Best Price</span>
                     <span className="cart-discount">Rs.139.76</span>
@@ -57,16 +56,16 @@ function Lung() {
                 <div className="cart-img">
                 <Link to="/addtocart">
                     <img
-                    src="https://www.netmeds.com/images/product-v1/150x150/388215/volini_spray_100gm_46243_0_2.jpg" alt="Volini Spray 100gm"
+                    src="https://www.netmeds.com/images/product-v1/150x150/913664/dr_morepen_breathefree_vaporizer_vp_06_403240_0_0.jpg" alt="Dr.Morepen Breathefree Vaporizer (VP 06)"
                     />
                 </Link>
                 </div>
                 <Link to="/addtocart">
-                <p className="cart-para">Volini Spray 100gm</p>
-                <p className="cart-italic">Mkt: Sun Pharmaceutical Industries Ltd</p>
+                <p className="cart-para">Dr.Morepen Breathefree Vaporizer (VP 06)</p>
+                <p className="cart-italic">Mkt: Morepen Laboratories Ltd</p>
                 <div className="price">
                     <span className="cart-price">Best Price</span>
-                    <span className="cart-discount">Rs.272.50</span>
+                    <span className="cart-discount">Rs.247.50</span>
                 </div>
                 </Link>
                 <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
@@ -75,16 +74,16 @@ function Lung() {
                 <div className="cart-img">
                 <Link to="/addtocart">
                     <img
-                    src="https://www.netmeds.com/images/product-v1/150x150/896035/digene_acidity_gas_relief_tablets_mint_flavour_15s_85679_0_3.jpg" alt="Digene Acidity &amp; Gas Relief Tablets - Mint Flavour 15's"
+                    src="https://www.netmeds.com/images/product-v1/150x150/1041191/pure_nutrition_lung_detox_with_vitamin_c_grape_seed_extract_800_mg_veg_capsule_60s_400901_0_1.jpg" alt="Pure Nutrition Lung Detox with Vitamin C &amp; Grape Seed Extract 800 mg Veg Capsule 60's"
                     />
                 </Link>
                 </div>
                 <Link to="/addtocart">
-                <p className="cart-para">Digene Acidity &amp; Gas Relief Tablets - Mint Flavour 15's</p>
-                <p className="cart-italic">Mkt: CIPLA HEALTH LTD</p>
+                <p className="cart-para">Pure Nutrition Lung Detox with Vitamin C</p>
+                <p className="cart-italic">Mkt: Herbs Nutriproducts Private Limited</p>
                 <div className="price">
                     <span className="cart-price">Best Price</span>
-                    <span className="cart-discount">Rs.139.76</span>
+                    <span className="cart-discount">Rs.2427.76</span>
                 </div>
                 </Link>
                 <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
@@ -93,52 +92,16 @@ function Lung() {
                 <div className="cart-img">
                 <Link to="/addtocart">
                     <img
-                    src="https://www.netmeds.com/images/product-v1/150x150/828337/cetaphil_oily_skin_cleanser_125ml_120194_0_1.jpg" alt="Cetaphil Oily Skin Cleanser 125ml"
+                    src="https://www.netmeds.com/images/product-v1/150x150/994901/romsons_kare_n95_respirator_mask_child_gs_6103c_1s_0_0.jpg" alt="Romsons Kare N95 Respirator Mask Child (GS - 6103C) 1's"
                     />
                 </Link>
                 </div>
                 <Link to="/addtocart">
-                <p className="cart-para">Cetaphil Oily Skin Cleanser 125ml</p>
-                <p className="cart-italic">Mkt: Galderma India Pvt Ltd</p>
+                <p className="cart-para">Romsons Kare N95 Respirator Mask Child</p>
+                <p className="cart-italic">Mkt: Romsons Group Private Limited</p>
                 <div className="price">
                     <span className="cart-price">Best Price</span>
-                    <span className="cart-discount">Rs.550.76</span>
-                </div>
-                </Link>
-                <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
-            </div>
-            <div className="container">
-                <div className="cart-img">
-                <Link to="/addtocart">
-                    <img
-                    src="https://www.netmeds.com/images/product-v1/150x150/12787/eno_fruit_salt_powder_orange_flavour_100_gm_0_1.jpg" alt="Eno Fruit Salt Powder - Orange Flavour 100 gm"
-                    />
-                </Link>
-                </div>
-                <Link to="/addtocart">
-                <p className="cart-para">Eno Fruit Salt Powder</p>
-                <p className="cart-italic">Mkt: ENO LTD</p>
-                <div className="price">
-                    <span className="cart-price">Best Price</span>
-                    <span className="cart-discount">Rs.139.76</span>
-                </div>
-                </Link>
-                <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
-            </div>
-            <div className="container">
-                <div className="cart-img">
-                <Link to="/addtocart">
-                    <img
-                    src="https://www.netmeds.com/images/product-v1/150x150/1023384/strepsils_lozenges_ginger_lemon_free_24_lozenges_200s_0_0.jpg" alt="Strepsils Lozenges - Ginger &amp; Lemon 200's + 24's Free"
-                    />
-                </Link>
-                </div>
-                <Link to="/addtocart">
-                <p className="cart-para">Strepsils Lozenges - Ginger &amp; Lemon 200's + 24's Free</p>
-                <p className="cart-italic">Mkt: Strepsils Health LTD</p>
-                <div className="price">
-                    <span className="cart-price">Best Price</span>
-                    <span className="cart-discount">Rs.150.00</span>
+                    <span className="cart-discount">Rs.131.76</span>
                 </div>
                 </Link>
                 <Link to="/addtocart"> <button className="main-cart-btn-home edit-btn-home">Add to cart</button></Link>
