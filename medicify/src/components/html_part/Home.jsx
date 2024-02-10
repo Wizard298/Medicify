@@ -72,7 +72,7 @@ function Home() {
                     </div>
                 </Link>
                 <div className='edit-cart-btn-home'>
-                    <Link to="/addtocart"><button className="main-cart-btn-home">Add to cart</button></Link>
+                    <button className="main-cart-btn-home">Add to cart</button>
                 </div>
             </div>
             <div className="cart-container">
@@ -92,7 +92,7 @@ function Home() {
                     </div>
                 </Link>
                 <div className='edit-cart-btn-home'>
-                    <Link to="/addtocart"> <button className="main-cart-btn-home">Add to cart</button></Link>
+                    <button className="main-cart-btn-home">Add to cart</button>
                 </div>
             </div>
             <div className="cart-container">
@@ -112,7 +112,7 @@ function Home() {
                 </div>
                 </Link>
                 <div className='edit-cart-btn-home'>
-                    <Link to="/addtocart"> <button className="main-cart-btn-home">Add to cart</button></Link>
+                    <button className="main-cart-btn-home">Add to cart</button>
                 </div>
             </div>
             <div className="cart-container">
@@ -132,7 +132,7 @@ function Home() {
                 </div>
                 </Link>
                 <div className='edit-cart-btn-home'>
-                    <Link to="/addtocart"> <button className="main-cart-btn-home">Add to cart</button></Link>
+                    <button className="main-cart-btn-home">Add to cart</button>
                 </div>
             </div>
             <div className="cart-container">
@@ -152,7 +152,7 @@ function Home() {
                 </div>
                 </Link>
                 <div className='edit-cart-btn-home'>
-                    <Link to="/addtocart"> <button className="main-cart-btn-home">Add to cart</button></Link>
+                    <button className="main-cart-btn-home">Add to cart</button>
                 </div>
             </div>
         </div>
