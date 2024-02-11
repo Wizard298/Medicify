@@ -1,4 +1,5 @@
 import React from "react";
+import '../css_part/FooterLinks.css'
 
 function Services() {
   return (

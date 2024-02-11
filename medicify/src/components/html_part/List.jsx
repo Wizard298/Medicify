@@ -11,7 +11,11 @@ function List() {
         <h2 className='categories-box1'>Categories</h2>
 
         <div className="medicine link-box1">
-            <Link className='link' to="/health">Medicine</Link>
+            <Link className='link' to="/health/allmedicine">All Medicines</Link>
+        </div>
+
+        <div className="medicine link-box1">
+            <Link className='link' to="/health">Fever</Link>
         </div>
 
         <div className="covid link-box1">

@@ -1,0 +1,8 @@
+.contact, .aboutus, .services, .cart-policy, .termsAndPolicy, .more-details, .privacy{
+    background-color: white;
+    width: 90%;
+    box-shadow: black 0px 0px 1px;
+    border-radius: 11px;
+    margin: 1% 2%;
+    padding: 1%;
+}
