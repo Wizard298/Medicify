@@ -102,7 +102,8 @@
     border-top: none;
     border-right: none;
     border-left: none;
-    width: 90%;
+    /* width: 90%; */
+    width: 94%;
     font-size: 17px;
     padding: 7px 8px;
     /* border-radius: 9px; */
@@ -117,13 +118,18 @@ input:focus {
     background-color: #49bccc;
     color: white;
     border: 1px solid white;
-    width: 90%;
+    /* width: 90%; */
+    width: 95%;
     /* height: 10%; */
     cursor: pointer;
     font-size: 19px;
     font-weight: 600;
     border-radius: 8px;
     padding: 8px;
+}
+
+.otp:hover{
+    background-color: #3098a4;
 }
 
 .google,.facebook{

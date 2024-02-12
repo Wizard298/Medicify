@@ -6,7 +6,6 @@ import image from '../images/navbar-icon.png'
 const Navbar =()=> {
   const location = useLocation();
   const [activeButton, setActiveButton] = useState(getActiveButton(location.pathname));
-  // const [activeButton, setActiveButton] = useState('home');
 
   const handleButtonClick = (buttonName) => {
     setActiveButton(buttonName);
@@ -34,7 +33,7 @@ const Navbar =()=> {
             <div className="navbar">
                 <div className="main-head">
                     <img className='nav-icon' src={image} alt="Error" />
-                    <Link className="main-anchor" to="/">Medicify</Link>
+                    <Link className="main-anchor" to="/home">Medicify</Link>
                 </div>
                 <div className="main-search">
                     <input type="search" className="main-search-bar" placeholder="Search for medicine & wellness products" aria-label="Search"/>
@@ -46,7 +45,7 @@ const Navbar =()=> {
 
                 <div className="medicine">
                     {/* <Link className="access" to="/"><button className='medicine-btn'>Home</button></Link> */}
-                    <Link  onClick={() => handleButtonClick('home')} className="access" to="/"><button className={location.pathname === '/' ? 'active' : 'medicine-btn'}>Home</button></Link>
+                    <Link  onClick={() => handleButtonClick('home')} className="access" to="/home"><button className={location.pathname === '/home' ? 'active' : 'medicine-btn'}>Home</button></Link>
                 </div>
                 <div className="health">
                     {/* <Link className="access" to="/health"><button className='health-btn '>Medicine</button></Link> */}

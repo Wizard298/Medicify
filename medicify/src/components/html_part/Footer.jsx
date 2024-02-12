@@ -9,24 +9,24 @@ function Footer() {
         <div className="columns">
           <div className="company">
             <div className="heading"><h4>COMPANY</h4>  </div>
-            <div className="text"><Link to="/">Home</Link> </div>
+            <div className="text"><Link to="/home">Home</Link> </div>
             <div className="text"><Link to="/home/aboutus">About Us</Link> </div>
             <div className="text"><Link to="/home/services">Services</Link> </div>
             <div className="text"><Link to="/home/contact">Contact Us</Link> </div>
-            <div className="text"><Link to="/">News</Link> </div>
+            <div className="text"><Link to="/health">Medicine</Link> </div>
           </div>
           <div className="company">
             <div className="heading"><h4 className="fourth-heading">OUR POLICIES</h4> </div>
-            <div className="text"><Link to="/">Terms & Conditions</Link> </div>
-            <div className="text"><Link to="/">Privacy Policy</Link> </div>
-            <div className="text"><Link to="/">Payments Policy</Link> </div>
-            <div className="text"><Link to="/">Shipping Policy</Link> </div>
-            <div className="text"><Link to="/">Return,Refund,etc</Link> </div>
+            <div className="text"><Link to="/home/terms">Terms & Conditions</Link> </div>
+            <div className="text"><Link to="/home/privacy">Privacy Policy</Link> </div>
+            <div className="text"><Link to="/home/cartPolicy">Our Cart Policy</Link> </div>
+            <div className="text"><Link to="/home/details">More Details...</Link> </div>
+            <div className="text"><Link to="/login">Login</Link> </div>
           </div>
           <div className="company">
             <div className="heading"> <h4>SHOPPING</h4> </div>
             <div className="text"><Link to="/health/fitness">Fitness</Link> </div>
-            <div className="text"><Link to="/health">Medicine</Link> </div>
+            <div className="text"><Link to="/health/covid">Covid</Link> </div>
             <div className="text"><Link to="/health/CardiacCare">Cardiac-Care</Link> </div>
             <div className="text"><Link to="/health/ayurvedic">Ayurvedic</Link> </div>
             <div className="text"><Link to="/cart">Cart</Link> </div>

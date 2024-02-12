@@ -1,12 +1,37 @@
-import React from "react";
-import '../css_part/Login.css'
-import img from '../images/Signimg.png'
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import "../css_part/Login.css";
+import img from "../images/Signimg.png";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 function Login() {
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted");
+    axios
+      .post("http://localhost:3500/login", {
+        email,
+        password,
+      })
+      .then((result) => {
+        console.log(result);
+        if(result.data === "Successful"){
+          navigate('/home')
+          alert('Login Successfull!\nRedirecting to home page!')
+        }
+        else{
+          alert("Password or User is incorrect!")
+        }
+      })
+      .catch((err) => console.log(err));
+  };
+
   return (
     <>
-    
       <div className="page">
         <div className="img-page">
           <h4 className="medicify-heading">Medicify</h4>
@@ -15,38 +40,64 @@ function Login() {
 
         <div className="signup-page">
           <div className="sign-login-toogle">
-            <Link className='login-link-heading hovering' to="/login"><h2 className="login-heading">Login</h2></Link> 
-            <Link className='signup-link-heading' to="/signup"><h2 className="signup-heading">Sign Up</h2></Link> 
+            <Link className="login-link-heading hovering" to="/login">
+              <h2 className="login-heading">Login</h2>
+            </Link>
+            <Link className="signup-link-heading" to="/">
+              <h2 className="signup-heading">Sign Up</h2>
+            </Link>
             {/* <h2 className="signup-heading"><Link to="/signup">SignUp</Link> </h2> */}
           </div>
-          
 
           <div className="lo-si-component">
-            <p className="para-signin"> Login or SignUp to access your orders,special offers, health tips
-              and more! </p>
-            <div className="phnum">
+            <p className="para-signin">
+              Login or SignUp to access your orders,special offers, health tips
+              and more!
+            </p>
+            <form onSubmit={handleSubmit}>
+              <div className="phnum">
+                <input
+                  type="email"
+                  className="num-edit"
+                  name="email"
+                  id="number"
+                  placeholder="Email id"
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
+                />
+                <br />
 
-              {/* <label className="phnum-label" htmlFor="email">E-Mail</label> */}
-              {/* <br /> */}
-              <input type="email" className="num-edit" name="email"  id="number" placeholder="Email id"/>
+                <br />
+                <input
+                  type="password"
+                  className="num-edit"
+                  name="number"
+                  id="number"
+                  placeholder="Password"
+                  onChange={(e) => {
+                    setPassword(e.target.value);
+                  }}
+                />
+              </div>
               <br />
-              {/* <label className="phnum-label" htmlFor="number">Password</label> */}
-              <br />
-              <input type="password" className="num-edit" name="number"  id="number" placeholder="Password"/>
-
-            </div>
-              <br />
-            <button className="otp">Login</button>
+              <button type="submit" className="otp">
+                Login
+              </button>
+            </form>
             <br />
             <br />
             <div>
-              <Link className="anchor-google" to="https://www.google.com"><button className="google">Google</button></Link>
-              <Link className="anchor-facebook" to="https://www.facebook.com"><button className="facebook">Facebook</button></Link>
+              <Link className="anchor-google" to="https://www.google.com">
+                <button className="google">Google</button>
+              </Link>
+              <Link className="anchor-facebook" to="https://www.facebook.com">
+                <button className="facebook">Facebook</button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
-
     </>
   );
 }

@@ -23,6 +23,11 @@ import BoneJoint from './components/html_part/BoneJoint';
 import Caring from './components/html_part/Caring';
 import Lung from './components/html_part/Lung';
 import ScrollToTop from './components/html_part/ScrollToTop';
+import TandC from './components/html_part/TandC';
+import Privacy from './components/html_part/Privacy';
+import OurCartP from './components/html_part/OurCartP';
+import MoreDetails from './components/html_part/MoreDetails';
+import Medicine from './components/html_part/Medicine';
 
 
 function App() {
@@ -35,12 +40,14 @@ function App() {
     <ScrollToTop/>
 
         <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/health" element={<Health/>} />
-          <Route path="/cart" element={<Cart/>} />
+          <Route path="/" element={<SignUp/>} />
           <Route path="/login" element={<Login/>} />
-          <Route path="/signup" element={<SignUp/>} />
-          <Route path="/addtocart" element={<AddtoCart/>} />
+          <Route path="/home" element={<Home/>} />
+          {/* <Route path="/" element={<Home/>} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/signup" element={<SignUp/>} /> */}
+          <Route path="/health" element={<Health/>} />
+          <Route path="/health/allmedicine" element={<Medicine/>} />
           <Route path="/health/covid" element={<Covid/>} />
           <Route path="/health/diabetes" element={<Diabetes/>} />
           <Route path="/health/fitness" element={<Fitness/>} />
@@ -50,9 +57,15 @@ function App() {
           <Route path="/health/joint" element={<BoneJoint/>} />
           <Route path="/health/care" element={<Caring/>} />
           <Route path="/health/lung" element={<Lung/>} />
+          <Route path="/cart" element={<Cart/>} />
+          <Route path="/addtocart" element={<AddtoCart/>} />
           <Route path="/home/aboutus" element={<AboutUs/>} />
           <Route path="/home/services" element={<Services/>} />
           <Route path="/home/contact" element={<Contact/>} />
+          <Route path="/home/terms" element={<TandC/>} />
+          <Route path="/home/privacy" element={<Privacy/>} />
+          <Route path="/home/cartPolicy" element={<OurCartP/>} />
+          <Route path="/home/details" element={<MoreDetails/>} />
         </Routes>
     
     <Footer/>
