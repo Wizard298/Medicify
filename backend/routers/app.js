@@ -4,6 +4,8 @@ const cors = require('cors')
 require('../mongodb/connect')
 // Creating Models
 const MedicineList = require('../models/mod')
+const loginList = require('../models/loginMod')
+
 
 const app = express()
 
@@ -27,19 +29,50 @@ app.get('/allmedicines',async (req,res)=>{
     }
 })
 
-// app.post('/list', async (req,res)=>{
+// app.get('/allmedicines/id',async (req,res)=>{
 //     try{
-//         const newList = new MedicineList(req.body)
-//         console.log(req.body)
-//         const saving = await newList.save()
-//         res.status(201).send(saving)
+//         const medicify = await MedicineList.find({}).limit(limit)
+//         res.json({ medicify })
 //     }
 //     catch(err){
-//         res.status(400).send(err)
+//         console.log('The error is: ', err)
 //     }
 // })
 
-const port = process.env.PORT || 2300
+
+app.post('/signup',(req, res)=>{
+    loginList.create(req.body)
+    .then(logins => res.json(logins))
+    .catch(err => res.json(err))
+})
+
+app.post('/login',(req, res)=>{
+    const {email, password} = req.body;
+
+    loginList.findOne({email: email})
+    .then((user) => {
+        if(user){
+            if(user.password === password){
+                res.json("Successful")
+            }
+            else{
+                res.json("Password Incorrect")
+            }
+        }
+        else{
+            res.json("No record existed")
+        }
+    })
+    .catch(err => console.log(err))
+})
+
+
+const port = process.env.PORT || 3500
 app.listen(port,()=>{
     console.log(`App listening on port http://localhost:${port}`)
 })
+
+
+
+
+

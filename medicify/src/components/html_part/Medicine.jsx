@@ -15,7 +15,7 @@ function Medicine() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:2300/allmedicines?limit=${limit}`)
+      .get(`http://localhost:3500/allmedicines?limit=${limit}`)
       .then((res) => {
         // console.log(res.data.medicify);
         setData(res.data.medicify);
@@ -27,9 +27,9 @@ function Medicine() {
 
   // Infinit Scrolling
   const handleInfinte = async ()=>{
-    console.log("scrollheight2062", document.documentElement.scrollHeight)
-    console.log("innerHeight730", window.innerHeight)
-    console.log("scrollTop", document.documentElement.scrollTop)
+    // console.log("scrollheight2062", document.documentElement.scrollHeight)
+    // console.log("innerHeight730", window.innerHeight)
+    // console.log("scrollTop", document.documentElement.scrollTop)
     try{
       if(window.innerHeight + document.documentElement.scrollTop + 1 >= document.documentElement.scrollHeight){
         setLimit(inc => inc + 6)

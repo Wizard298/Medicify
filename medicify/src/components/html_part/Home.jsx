@@ -440,15 +440,15 @@ function Home() {
 
         <div className="brand-images">
             <div className="health-img-1 brand-img1">
-            <Link to="/health">
-                <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/dabur.jpg?v=14" alt="dabur"/>
-                <p className='health-para'>Dabur</p>
+            <Link to="/health/fitness">
+                <img src="https://www.netmeds.com/images/product-v1/150x150/1004630/myfitness_chocolate_peanut_butter_crunchy_1250_gm_0_0.jpg" alt="Peanut Butter"/>
+                <p className='health-para'>Peanut Butter</p>
             </Link>
             </div>
             <div className="health-img-1 brand-img1">
-            <Link to="/health">
-                <img src="https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/omnigel.jpg?v=14" alt="Omnigel"/>
-                <p className='health-para'>Omnigel</p>
+            <Link to="/health/CardiacCare">
+                <img src="https://www.netmeds.com/images/product-v1/150x150/927986/wellbeing_nutrition_organic_apple_cider_vinegar_flavoured_500_ml_148366_0_2.jpg" alt="Wellbeing Nutrition Organic Apple Cider Vinegar - Flavoured 500 ml"/>
+                <p className='health-para'>Well Nutrition</p>
             </Link>
             </div>
             <div className="health-img-1 brand-img1">

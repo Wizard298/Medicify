@@ -28,6 +28,7 @@ import Privacy from './components/html_part/Privacy';
 import OurCartP from './components/html_part/OurCartP';
 import MoreDetails from './components/html_part/MoreDetails';
 import Medicine from './components/html_part/Medicine';
+// import { Medicify1 } from './components/expi/productList';
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
           {/* <Route path="/" element={<Home/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<SignUp/>} /> */}
+          
           <Route path="/health" element={<Health/>} />
           <Route path="/health/allmedicine" element={<Medicine/>} />
           <Route path="/health/covid" element={<Covid/>} />
@@ -57,8 +59,10 @@ function App() {
           <Route path="/health/joint" element={<BoneJoint/>} />
           <Route path="/health/care" element={<Caring/>} />
           <Route path="/health/lung" element={<Lung/>} />
+
           <Route path="/cart" element={<Cart/>} />
           <Route path="/addtocart" element={<AddtoCart/>} />
+          
           <Route path="/home/aboutus" element={<AboutUs/>} />
           <Route path="/home/services" element={<Services/>} />
           <Route path="/home/contact" element={<Contact/>} />
@@ -75,20 +79,3 @@ function App() {
 }
 
 export default App;
-
-
-
-// import { lazy, Suspense } from 'react';
-
-// TO reduce the reload
-// const Navbar = lazy(()=> import("./components/html_part/Navbar"))
-// const Home = lazy(()=> import("./components/html_part/Home"))
-// const Cart = lazy(()=> import("./components/html_part/Cart"))
-// const Login = lazy(()=> import("./components/html_part/Login"))
-// const Footer = lazy(()=> import("./components/html_part/Footer"))
-// const Loader = lazy(()=> import("./components/html_part/Loader"))
-// const Health = lazy(()=> import("./components/html_part/Health"))
-
-
-// <Suspense fallback={<Loader/>}>
-// </Suspense> 

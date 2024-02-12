@@ -1,28 +1,17 @@
 import React, { useState } from 'react';
 import '../css_part/NavbarStyle.css'
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation , useMatch  } from 'react-router-dom';
 import image from '../images/navbar-icon.png'
 
 const Navbar =()=> {
   const location = useLocation();
-  const [activeButton, setActiveButton] = useState(getActiveButton(location.pathname));
+  const matchHealth = useMatch('/health');
+  const [activeButton, setActiveButton] = useState(location.pathname);
 
   const handleButtonClick = (buttonName) => {
     setActiveButton(buttonName);
+    console.log(buttonName)
   };
-
-  // Helper function to determine the active button based on the current route
-  function getActiveButton(pathname) {
-    if (pathname === '/') {
-      return 'home';
-    } else if (pathname.startsWith('/health')) {
-      return 'health';
-    } else if (pathname === '/signup') {
-      return 'login';
-    }
-    // Add more conditions for other routes if needed
-    return '';
-  }
 
   return (
     <>
@@ -44,7 +33,7 @@ const Navbar =()=> {
             <div className="nav2">
 
                 <div className="medicine">
-                    {/* <Link className="access" to="/"><button className='medicine-btn'>Home</button></Link> */}
+                    {/* <Link  onClick={() => handleButtonClick('home')} className="access" to="/home"><button className={tryClass}>Home</button></Link> */}
                     <Link  onClick={() => handleButtonClick('home')} className="access" to="/home"><button className={location.pathname === '/home' ? 'active' : 'medicine-btn'}>Home</button></Link>
                 </div>
                 <div className="health">
