@@ -1,5 +1,4 @@
 const express = require('express')
-// const mongoose = require('mongoose')
 const cors = require('cors')
 const loginList = require('../models/loginMod')
 require('../mongodb/connect')
@@ -15,31 +14,17 @@ app.get('/',(req,res)=>{
     res.send('Created Successfully!')
 })
 
-app.post('/signup',(req, res)=>{
-    loginList.create(req.body)
-    .then(logins => res.json(logins))
-    .catch(err => res.json(err))
-})
-
-app.post('/login',(req, res)=>{
-    const {email, password} = req.body;
-
-    loginList.findOne({email: email})
-    .then((user) => {
-        if(user){
-            if(user.password === password){
-                res.json("Successful")
-            }
-            else{
-                res.json("Password Incorrect")
-            }
-        }
-        else{
-            res.json("No record existed")
-        }
-    })
-    .catch(err => console.log(err))
-})
+// app.post('/list', async (req,res)=>{
+//     try{
+//         const newList = new MedicineList(req.body)
+//         console.log(req.body)
+//         const saving = await newList.save()
+//         res.status(201).send(saving)
+//     }
+//     catch(err){
+//         res.status(400).send(err)
+//     }
+// })
 
 
 
