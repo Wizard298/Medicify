@@ -46,16 +46,16 @@ function Medicine() {
   },[])
 
   // Mapping
-  const listItems = data.map((item, index) => {
+  const listItems = data.map((item) => {
     return (
-      <>
-        <div className="container" key={index}>
+      <React.Fragment key={item.id}>
+        <div className="container">
           <div className="cart-img">
-            <Link to="/addtocart">
+            <Link to={`/addtocart/${item.id}`}>
               <img src={item.img} alt={item.name} />
             </Link>
           </div>
-          <Link to="/addtocart">
+          <Link to={`/addtocart/${item.id}`}>
             <p className="cart-para">{item.name}</p>
             <p className="cart-italic">{item.description}</p>
             <div className="price">
@@ -67,7 +67,7 @@ function Medicine() {
             Add to cart
           </button>
         </div>
-      </>
+      </React.Fragment>
     );
   });
 

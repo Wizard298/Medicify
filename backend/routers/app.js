@@ -29,15 +29,16 @@ app.get('/allmedicines',async (req,res)=>{
     }
 })
 
-// app.get('/allmedicines/id',async (req,res)=>{
-//     try{
-//         const medicify = await MedicineList.find({}).limit(limit)
-//         res.json({ medicify })
-//     }
-//     catch(err){
-//         console.log('The error is: ', err)
-//     }
-// })
+app.get('/allmedicines/:id',async (req,res)=>{
+    try{
+        const id = req.params.id;
+        const oneItem = await MedicineList.find({id})
+        res.json({oneItem})
+    }
+    catch(err){
+        console.log(err)
+    }
+})
 
 
 app.post('/signup',(req, res)=>{

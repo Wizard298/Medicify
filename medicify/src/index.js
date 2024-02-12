@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import Main from './Main';
+// eslint-disable-next-line
 import App from './App';
 
 
