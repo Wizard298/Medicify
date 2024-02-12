@@ -1,34 +1,38 @@
 import React, { useState, useEffect } from "react";
-import '../css_part/AddtoCart.css'
+// import { Link } from "react-router-dom";
+import "../css_part/AddtoCart.css";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 
-function AddtoCart() {
-    const [data, setData] = useState([]);
-    const { id } = useParams();
+function Carting() {
+  const [data, setData] = useState([]);
+  const { id } = useParams();
 
-    useEffect(() => {
-        axios
-          .get(`http://localhost:3500/allmedicines/${id}`)
-          .then((res) => {
-           // console.log(res.data.oneItem[0].name);
-            setData(res.data.oneItem[0]);
-          })
-          .catch((err) => console.log(err));
-      }, [id]);
+  useEffect(() => {
+    axios
+      .get(`http://localhost:3500/allmedicines/${id}`)
+      .then((res) => {
+        // console.log(res.data.oneItem[0].name);
+        setData(res.data.oneItem[0]);
+      })
+      .catch((err) => console.log(err));
+  }, [id]);
+
+  const editStyle = {
+    width: "35vw",
+    padding: "13px",
+    fontSize: "18px",
+    marginTop: 51,
+  };
 
 
-      const editStyle ={
-        width: "35vw",
-        padding: "13px",
-        fontSize: "18px",
-        marginTop: 51
-      }
+//   const listItems = data.map((item) => {
+//     return <React.Fragment key={item.id}></React.Fragment>;
+//   });
 
   return (
     <>
-    
-    <div className="addcart-page">
+      <div className="addcart-page">
         <div className="addcart-img">
           <img src={data.img} alt={data.name} />
         </div>
@@ -55,9 +59,8 @@ function AddtoCart() {
           </div>
         </div>
       </div>
-
     </>
-  )
+  );
 }
 
-export default AddtoCart
+export default Carting;

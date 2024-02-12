@@ -61,7 +61,7 @@ function App() {
           <Route path="/health/lung" element={<Lung/>} />
 
           <Route path="/cart" element={<Cart/>} />
-          <Route path="/addtocart" element={<AddtoCart/>} />
+          <Route path="/addtocart/:id" element={<AddtoCart/>} />
           
           <Route path="/home/aboutus" element={<AboutUs/>} />
           <Route path="/home/services" element={<Services/>} />
