@@ -27,4 +27,3 @@ Link of Demo Video ------> https://flashbackconnect.com/Default.aspx?id=Ene2hEHE
 7. Contact and Support
 8. Health History 
 9. Medication Reminders
-10. Discounts and Coupons
