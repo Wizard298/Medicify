@@ -6,6 +6,7 @@ function MoreDetails() {
     <>
       <div className="more-details">
         <h1>Details</h1>
+        <br />
         <h3>1. Cart Storage Duration:</h3>
         Your cart contents are stored for a limited duration, typically for a
         specified period after your last activity on the website or application.
