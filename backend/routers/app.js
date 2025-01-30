@@ -15,7 +15,7 @@ app.use(cors())
 
 
 app.get('/', (req,res)=>{
-    res.send('Backend Server Created Successfully!')
+    res.send("<h1> Backend Server Created Successfully! <br> Now go to ---> /allmedicines </h1>")
 })
 
 app.get('/allmedicines',async (req,res)=>{
@@ -41,6 +41,7 @@ app.get('/allmedicines/:id',async (req,res)=>{
 })
 
 
+// authentication 
 app.post('/signup',(req, res)=>{
     loginList.create(req.body)
     .then(logins => res.json(logins))

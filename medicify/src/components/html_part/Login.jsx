@@ -21,7 +21,7 @@ function Login() {
         console.log(result);
         if(result.data === "Successful"){
           navigate('/home')
-          alert('Login Successfull!\nRedirecting to home page!')
+          alert('Login Successfull!\n Redirecting to home page!')
         }
         else{
           alert("Password or User is incorrect!")
