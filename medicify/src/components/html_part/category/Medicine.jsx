@@ -6,6 +6,7 @@ import "../../css_part/Health.css";
 import axios from "axios";
 import Loading from "../Loading";
 import '../../css_part/loading.css'
+// import { AllMedicines } from "../../expi/allList";
 // import InfiniteScroll from "react-infinite-scroll-component";
 
 function Medicine() {

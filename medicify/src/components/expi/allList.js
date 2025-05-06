@@ -1,4 +1,4 @@
-[
+export const AllMedicines = [
     {
         "id": 1,
         "name": "Dolo 650 Tablet 15'S",

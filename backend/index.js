@@ -13,7 +13,17 @@ const app = express()
 
 //Creating Middleware
 app.use(express.json())
-app.use(cors())
+// app.use(cors())
+app.use(cors({
+    origin: [
+        'http://localhost:3000',
+        'https://medicify.netlify.app'
+    ],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+}));
+
+app.options('*', cors());
 
 
 app.get('/', (req,res)=>{
