@@ -26,6 +26,7 @@ app.use(cors({
 app.options('*', cors());
 
 
+
 app.get('/', (req,res)=>{
     res.send("<h1> Backend Server Created Successfully! <br> Now go to ---> /allmedicines </h1>")
 })
