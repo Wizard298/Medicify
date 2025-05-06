@@ -1,10 +1,12 @@
 const express = require('express')
 const cors = require('cors')
+// loading env variables
+require('dotenv').config();
 // Connecting to mongo
-require('../mongodb/connect')
+require('./mongodb/connect')
 // Creating Models
-const MedicineList = require('../models/mod')
-const loginList = require('../models/loginMod')
+const MedicineList = require('./models/mod')
+const loginList = require('./models/loginMod')
 
 
 const app = express()
@@ -40,6 +42,18 @@ app.get('/allmedicines/:id',async (req,res)=>{
     }
 })
 
+// app.post('/list', async (req,res)=>{
+//     try{
+//         const newList = new MedicineList(req.body)
+//         console.log(req.body)
+//         const saving = await newList.save()
+//         res.status(201).send(saving)
+//     }
+//     catch(err){
+//         res.status(400).send(err)
+//     }
+// })
+
 
 // authentication 
 app.post('/signup',(req, res)=>{
@@ -67,6 +81,7 @@ app.post('/login',(req, res)=>{
     })
     .catch(err => console.log(err))
 })
+
 
 
 const port = process.env.PORT || 3500

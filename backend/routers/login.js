@@ -14,18 +14,6 @@ app.get('/',(req,res)=>{
     res.send('Created Successfully!')
 })
 
-// app.post('/list', async (req,res)=>{
-//     try{
-//         const newList = new MedicineList(req.body)
-//         console.log(req.body)
-//         const saving = await newList.save()
-//         res.status(201).send(saving)
-//     }
-//     catch(err){
-//         res.status(400).send(err)
-//     }
-// })
-
 
 
 const port = process.env.PORT || 3500

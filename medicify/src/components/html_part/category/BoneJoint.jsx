@@ -1,8 +1,8 @@
 import React from 'react'
-import '../css_part/Medicine.css'
+import '../../css_part/Medicine.css'
 import { Link } from 'react-router-dom'
-import List from './List'
-import { Bone1 } from '../expi/productList'
+import List from '../List'
+import { Bone1 } from '../../expi/productList'
 
 function BoneJoint() {
   return (

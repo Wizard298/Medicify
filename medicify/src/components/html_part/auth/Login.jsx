@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "../css_part/Login.css";
-import img from "../images/Signimg.png";
+import "../../css_part/Login.css";
+import img from "../../images/Signimg.png";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
@@ -13,10 +13,7 @@ function Login() {
     e.preventDefault();
     console.log("Form submitted");
     axios
-      .post("http://localhost:3500/login", {
-        email,
-        password,
-      })
+      .post(`${process.env.REACT_APP_BACKEND_URL}/login`, {email, password})
       .then((result) => {
         console.log(result);
         if(result.data === "Successful"){
@@ -24,7 +21,7 @@ function Login() {
           alert('Login Successfull!\n Redirecting to home page!')
         }
         else{
-          alert("Password or User is incorrect!")
+          alert("Password or email is incorrect!")
         }
       })
       .catch((err) => console.log(err));

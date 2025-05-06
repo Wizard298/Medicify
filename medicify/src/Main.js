@@ -4,34 +4,39 @@ import { Routes, Route } from "react-router-dom";
 
 import Navbar from './components/html_part/Navbar';
 import Home from './components/html_part/Home';
-import Cart from './components/html_part/Cart';
-import Health from './components/html_part/Health';
-import Login from './components/html_part/Login';
 import Footer from './components/html_part/Footer';
-import Covid from './components/html_part/Covid';
-import Diabetes from './components/html_part/Diabetes';
-import Fitness from './components/html_part/Fitness';
-import CardiacCare from './components/html_part/CardiacCare';
-import Ayurvedic from './components/html_part/Ayurvedic';
-import SignUp from './components/html_part/SignUp';
+
 import AddtoCart from './components/html_part/AddtoCart';
-import AboutUs from './components/html_part/AboutUs';
-import Services from './components/html_part/Services';
-import Contact from './components/html_part/Contact';
-import Weight from './components/html_part/Weight';
-import BoneJoint from './components/html_part/BoneJoint';
-import Caring from './components/html_part/Caring';
-import Lung from './components/html_part/Lung';
+import Cart from './components/html_part/Cart';
+
+import Login from './components/html_part/auth/Login';
+import SignUp from './components/html_part/auth/SignUp';
+
+import Medicine from './components/html_part/category/Medicine';
+import Health from './components/html_part/category/Health';
+import Covid from './components/html_part/category/Covid';
+import Diabetes from './components/html_part/category/Diabetes';
+import Fitness from './components/html_part/category/Fitness';
+import CardiacCare from './components/html_part/category/CardiacCare';
+import Ayurvedic from './components/html_part/category/Ayurvedic';
+import Weight from './components/html_part/category/Weight';
+import BoneJoint from './components/html_part/category/BoneJoint';
+import Caring from './components/html_part/category/Caring';
+import Lung from './components/html_part/category/Lung';
+
+import AboutUs from './components/html_part/footer_comp/AboutUs';
+import Services from './components/html_part/footer_comp/Services';
+import Contact from './components/html_part/footer_comp/Contact';
+import TandC from './components/html_part/footer_comp/TandC';
+import Privacy from './components/html_part/footer_comp/Privacy';
+import OurCartP from './components/html_part/footer_comp/OurCartP';
+import MoreDetails from './components/html_part/footer_comp/MoreDetails';
+
 import ScrollToTop from './components/html_part/ScrollToTop';
-import TandC from './components/html_part/TandC';
-import Privacy from './components/html_part/Privacy';
-import OurCartP from './components/html_part/OurCartP';
-import MoreDetails from './components/html_part/MoreDetails';
-import Medicine from './components/html_part/Medicine';
 // import { Medicify1 } from './components/expi/productList';
 
 
-function App() {
+function Main() {
 
   return (
     <>
@@ -44,9 +49,6 @@ function App() {
           <Route path="/" element={<SignUp/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/home" element={<Home/>} />
-          {/* <Route path="/" element={<Home/>} />
-          <Route path="/login" element={<Login/>} />
-          <Route path="/signup" element={<SignUp/>} /> */}
           
           <Route path="/health" element={<Health/>} />
           <Route path="/health/allmedicine" element={<Medicine/>} />
@@ -63,13 +65,14 @@ function App() {
           <Route path="/cart" element={<Cart/>} />
           <Route path="/addtocart/:id" element={<AddtoCart/>} />
           
-          <Route path="/home/aboutus" element={<AboutUs/>} />
-          <Route path="/home/services" element={<Services/>} />
-          <Route path="/home/contact" element={<Contact/>} />
           <Route path="/home/terms" element={<TandC/>} />
           <Route path="/home/privacy" element={<Privacy/>} />
           <Route path="/home/cartPolicy" element={<OurCartP/>} />
           <Route path="/home/details" element={<MoreDetails/>} />
+
+          <Route path="/home/aboutus" element={<AboutUs/>} />
+          <Route path="/home/services" element={<Services/>} />
+          <Route path="/home/contact" element={<Contact/>} />
         </Routes>
     
     <Footer/>
@@ -78,4 +81,4 @@ function App() {
   );
 }
 
-export default App;
+export default Main;

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import List from "./List";
-import "../css_part/Medicine.css";
-import "../css_part/Health.css";
+import List from "../List";
+import "../../css_part/Medicine.css";
+import "../../css_part/Health.css";
 import axios from "axios";
-import Loading from "./Loading";
-import '../css_part/loading.css'
+import Loading from "../Loading";
+import '../../css_part/loading.css'
 // import InfiniteScroll from "react-infinite-scroll-component";
 
 function Medicine() {
@@ -15,7 +15,7 @@ function Medicine() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3500/allmedicines?limit=${limit}`)
+      .get(`${process.env.REACT_APP_BACKEND_URL}/allmedicines?limit=${limit}`)
       .then((res) => {
         // console.log(res.data.medicify);
         setData(res.data.medicify);

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "../css_part/Login.css";
-import img from "../images/Signimg.png";
+import "../../css_part/Login.css";
+import img from "../../images/Signimg.png";
 import { Link, useNavigate} from "react-router-dom";
 import axios from "axios";
 
@@ -14,11 +14,11 @@ const SignUp =() =>{
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted");
-    axios.post("http://localhost:3500/signup", {
+    axios.post(`${process.env.REACT_APP_BACKEND_URL}/signup`, {
       firstname, lastname, email, password})
       .then((result) => {
         console.log(result)
-        alert('Sign Up Successfull!')
+        alert('Sign Up Successfully!')
         navigate('/login')
       })
       .catch(err => console.log(err));

@@ -1,5 +1,5 @@
 import React from "react";
-import '../css_part/FooterLinks.css'
+import '../../css_part/FooterLinks.css'
 
 function TandC() {
   return (

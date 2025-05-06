@@ -1,23 +1,22 @@
 import React from 'react'
-import '../css_part/Medicine.css'
+import '../../css_part/Medicine.css'
 import { Link } from 'react-router-dom'
-import List from './List'
-import { PersonalCare1 } from '../expi/productList'
+import List from '../List'
+import { Diabetes1 } from '../../expi/productList'
 
-function Caring() {
+function Diabetes() {
   return (
-    
 
     <>
 
-    <h1 className='list-heading'>Personal Care</h1>
-
+    <h1 className='list-heading'>Diabetes</h1>
+    
     <div className="box">
 
-        <List/>
+      <List/>
 
-        <div className='box2'>
-        {PersonalCare1.map(product => (
+      <div className='box2'>
+      {Diabetes1.map(product => (
             <React.Fragment key={product.id}>
                 <div className="container">
                     <div className="cart-img">
@@ -42,14 +41,12 @@ function Caring() {
                 </div>
             </React.Fragment>
         ))}
-        </div>
+      </div>
+
     </div>
-
+    
     </>
-
-
-
   )
 }
 
-export default Caring
+export default Diabetes

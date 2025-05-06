@@ -11,6 +11,7 @@ import { Medicify1, Medicify2, Medicify3 } from '../expi/productList'
 function Home() {
   return (
     <>
+    {/* ImgSlide.css */}
     <div className='animation-slide'>
         <figure>
             <div className="slide-img">
@@ -63,7 +64,7 @@ function Home() {
                             <img
                                 src={product.img}
                                 alt={product.name}
-                                />
+                            />
                         </Link>
                     </div>
                     <Link to={`/addtocart/${product.id}`}>

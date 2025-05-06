@@ -1,21 +1,28 @@
 import React from 'react'
-import '../css_part/Medicine.css'
-import List from './List'
+import '../../css_part/Health.css'
+import '../../css_part/Medicine.css'
 import { Link } from 'react-router-dom'
-import { Fitness1 } from '../expi/productList'
 
-function Fitness() {
+import List from '../List'
+import { Medicine } from '../../expi/productList'
+
+
+function Health() {
   return (
+
     <>
 
-    <h1 className='list-heading'>Fitness</h1>
+    {/* <Navbar/> */}
+
+    <h1 className='list-heading'>Cold and Fever</h1>
 
     <div className="box">
 
-        <List/>
+      <List/>
 
-        <div className='box2'>
-        {Fitness1.map(product => (
+      <div className="box2">
+
+      {Medicine.map(product => (
             <React.Fragment key={product.id}>
                 <div className="container">
                     <div className="cart-img">
@@ -40,12 +47,17 @@ function Fitness() {
                 </div>
             </React.Fragment>
         ))}
-        </div>
+
+      </div>
 
     </div>
 
+    
+    
     </>
+
+
   )
 }
 
-export default Fitness
+export default Health

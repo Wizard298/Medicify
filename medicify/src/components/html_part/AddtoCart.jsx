@@ -9,7 +9,7 @@ function AddtoCart() {
 
     useEffect(() => {
         axios
-          .get(`http://localhost:3500/allmedicines/${id}`)
+          .get(`${process.env.REACT_APP_BACKEND_URL}/allmedicines/${id}`)
           .then((res) => {
            // console.log(res.data.oneItem[0].name);
             setData(res.data.oneItem[0]);
