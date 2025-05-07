@@ -15,10 +15,15 @@ function Login() {
     axios
       .post(`${process.env.REACT_APP_BACKEND_URL}/login`, {email, password})
       .then((result) => {
-        console.log(result);
-        if(result.data === "Successful"){
+        
+        if(result.data.message === "Successful"){
           navigate('/home')
+          
+          localStorage.setItem("user", JSON.stringify(result.data.user));
+
           alert('Login Successfull!\n Redirecting to home page!')
+          window.location.reload(); 
+
         }
         else{
           alert("Password or email is incorrect!")
@@ -48,7 +53,7 @@ function Login() {
 
           <div className="lo-si-component">
             <p className="para-signin">
-              Login or SignUp to access your orders,special offers, health tips
+              Login or SignIn to access your orders, special offers, health tips
               and more!
             </p>
             <form onSubmit={handleSubmit}>
@@ -59,9 +64,7 @@ function Login() {
                   name="email"
                   id="number"
                   placeholder="Email id"
-                  onChange={(e) => {
-                    setEmail(e.target.value);
-                  }}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
                 <br />
 
@@ -72,9 +75,7 @@ function Login() {
                   name="number"
                   id="number"
                   placeholder="Password"
-                  onChange={(e) => {
-                    setPassword(e.target.value);
-                  }}
+                  onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
               <br />

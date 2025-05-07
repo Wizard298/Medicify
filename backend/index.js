@@ -67,11 +67,47 @@ app.get('/allmedicines/:id',async (req,res)=>{
 
 
 // authentication 
-app.post('/signup',(req, res)=>{
-    loginList.create(req.body)
-    .then(logins => res.json(logins))
-    .catch(err => res.json(err))
+// get all logins details
+app.get('/allLogins', async (req, res) => {
+    try {
+        const limit = parseInt(req.query.limit)
+        const storeLogin = await loginList.find({}).limit(limit)
+        res.json({ storeLogin })
+    }
+    catch (err) {
+        console.log('The error is', err)
+    }
 })
+
+
+app.post('/signup',async (req, res)=>{
+    // loginList.create(req.body)
+    // .then(logins => res.json(logins))
+    // .catch(err => res.json(err))
+    const {firstname, lastname, email, password} = req.body;
+
+    const existingUser = await loginList.findOne({ email });
+
+    if(existingUser){
+        res.json({
+            message: "email"
+        })
+    }
+    else{
+        loginList.create({firstname, lastname, email, password})
+        .then(data => res.json({
+            message: "User registered successfully!",
+            user: {
+                firstName: data.firstName,
+                lastName: data.lastName,
+                email: data.email,
+                password: data.password
+            }
+        }))
+        .catch(err => res.json({ error: "Error registering user", details: err }))
+    }
+})
+
 
 app.post('/login',(req, res)=>{
     const {email, password} = req.body;
@@ -80,7 +116,15 @@ app.post('/login',(req, res)=>{
     .then((user) => {
         if(user){
             if(user.password === password){
-                res.json("Successful")
+                res.json({
+                    message: "Successful",
+                    user: {
+                        firstName: user.firstName,
+                        lastName: user.lastName,
+                        email: user.email,
+                        password: user.password
+                    }
+                })
             }
             else{
                 res.json("Password Incorrect")
@@ -91,6 +135,32 @@ app.post('/login',(req, res)=>{
         }
     })
     .catch(err => console.log(err))
+})
+
+
+app.post('reset', async (req, res) => {
+    const { email, password } = req.body;
+
+    const existingUser = await signupModel.findOne({ email });
+    if(existingUser){
+        if(existingUser.password !== password){
+            existingUser.password = password; 
+            await existingUser.save();
+            res.json({
+                message: "password",
+            })
+        }
+        else{
+            res.json({
+                message: "same",
+            })
+        }
+    }
+    else{
+        res.json({
+            message: "email",
+        })
+    }
 })
 
 

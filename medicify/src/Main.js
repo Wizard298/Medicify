@@ -1,13 +1,13 @@
+import React, { useState } from 'react';
 import './App.css';
 import { Routes, Route } from "react-router-dom";
-// import React, { useState } from 'react';
 
 import Navbar from './components/html_part/Navbar';
 import Home from './components/html_part/Home';
 import Footer from './components/html_part/Footer';
 
 import AddtoCart from './components/html_part/AddtoCart';
-import Cart from './components/html_part/Cart';
+import CartPage from './components/html_part/CartPage';
 
 import Login from './components/html_part/auth/Login';
 import SignUp from './components/html_part/auth/SignUp';
@@ -33,15 +33,16 @@ import OurCartP from './components/html_part/footer_comp/OurCartP';
 import MoreDetails from './components/html_part/footer_comp/MoreDetails';
 
 import ScrollToTop from './components/html_part/ScrollToTop';
-// import { Medicify1 } from './components/expi/productList';
+import Search from './components/html_part/Search';
 
 
 function Main() {
+  const [searchQuery, setSearchQuery] = useState('');
 
   return (
     <>
     
-    <Navbar/>
+    <Navbar searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
 
     <ScrollToTop/>
 
@@ -62,17 +63,19 @@ function Main() {
           <Route path="/health/care" element={<Caring/>} />
           <Route path="/health/lung" element={<Lung/>} />
 
-          <Route path="/cart" element={<Cart/>} />
+          <Route path="/cart" element={<CartPage/>} />
           <Route path="/addtocart/:id" element={<AddtoCart/>} />
           
+          <Route path="/home/about" element={<AboutUs/>} />
+          <Route path="/home/services" element={<Services/>} />
+          <Route path="/home/contact" element={<Contact/>} />
           <Route path="/home/terms" element={<TandC/>} />
           <Route path="/home/privacy" element={<Privacy/>} />
           <Route path="/home/cartPolicy" element={<OurCartP/>} />
           <Route path="/home/details" element={<MoreDetails/>} />
 
-          <Route path="/home/aboutus" element={<AboutUs/>} />
-          <Route path="/home/services" element={<Services/>} />
-          <Route path="/home/contact" element={<Contact/>} />
+          <Route path="/home/search" element={<Search searchQuery={searchQuery} />} />
+
         </Routes>
     
     <Footer/>

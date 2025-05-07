@@ -13,13 +13,20 @@ const SignUp =() =>{
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted");
+
+    // console.log("Form submitted");
+
     axios.post(`${process.env.REACT_APP_BACKEND_URL}/signup`, {
       firstname, lastname, email, password})
       .then((result) => {
-        console.log(result)
-        alert('Sign Up Successfully!')
-        navigate('/login')
+        // console.log(result)
+        if(result.data.message === "email"){
+          alert("Email already exists!");
+        }
+        else{
+          alert('Sign Up Successfully!')
+          navigate('/login')
+        }
       })
       .catch(err => console.log(err));
   }
@@ -44,7 +51,7 @@ const SignUp =() =>{
 
           <div className="lo-si-component">
             <p className="para-signin">
-              Login or Sign in to access your orders,special offers, health tips
+              Sign Up to become the member and access your orders, special offers, health tips
               and more!
             </p>
 
@@ -55,10 +62,11 @@ const SignUp =() =>{
                   className="num-edit"
                   name="firstname"
                   id="names1"
+                  minLength="3"
+                  maxLength="16"
                   placeholder="First Name"
-                  onChange={(e) => {
-                    setFirstname(e.target.value);
-                  }}
+                  onChange={(e) => setFirstname(e.target.value)}
+                  required
                 />
                 <br />
                 <br />
@@ -67,16 +75,18 @@ const SignUp =() =>{
                   className="num-edit"
                   name="lastname"
                   id="names2"
+                  minLength="3"
+                  maxLength="16"
                   placeholder="Last Name"
-                  onChange={(e) => {
-                    setLastname(e.target.value);
-                  }}
+                  onChange={(e) => setLastname(e.target.value)}
+                  required
                 />
                 <br />
 
                 <br />
                 <input
                   type="email"
+                  autoComplete="email"
                   className="num-edit"
                   name="email"
                   id="email"
@@ -84,19 +94,24 @@ const SignUp =() =>{
                   onChange={(e) => {
                     setEmail(e.target.value);
                   }}
+                  required
                 />
 
                 <br />
                 <br />
                 <input
                   type="password"
+                  autoComplete="new-password"
                   className="num-edit"
                   name="password"
                   id="password"
+                  minLength="8"
+                  maxLength="16"
                   placeholder="Password"
                   onChange={(e) => {
                     setPassword(e.target.value);
                   }}
+                  required
                 />
                 <br />
               </div>

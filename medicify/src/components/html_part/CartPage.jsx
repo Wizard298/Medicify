@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import '../css_part/Cart.css'
 
-function Cart() {
+function CartPage() {
   return (
     <>
 
@@ -19,4 +19,4 @@ function Cart() {
   );
 }
 
-export default Cart;
+export default CartPage;
