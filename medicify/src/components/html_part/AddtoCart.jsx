@@ -1,21 +1,38 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import '../css_part/AddtoCart.css'
 import { useParams } from "react-router-dom";
-import axios from "axios";
+// import axios from "axios";
+// import { AllMedicines } from "../expi/allList";
+import { CartContext } from "./Cart";
+// import { CartContext } from "../Cart";
+
 
 function AddtoCart() {
+    const {state, addToCart} = useContext(CartContext);
+    // const Ayurvedic1 = state.item.Ayurvedic1;
+
+    console.log(state.item)
+    
     const [data, setData] = useState([]);
     const { id } = useParams();
 
-    useEffect(() => {
-        axios
-          .get(`${process.env.REACT_APP_BACKEND_URL}/allmedicines/${id}`)
-          .then((res) => {
-           // console.log(res.data.oneItem[0].name);
-            setData(res.data.oneItem[0]);
-          })
-          .catch((err) => console.log(err));
-      }, [id]);
+
+    useEffect(()=>{
+      const exactData = state.item.find(item => item.id === parseInt(id));
+      // console.log("exactData",exactData[0])
+      setData(exactData);
+    }, [id, state.item])
+
+
+    // useEffect(() => {
+    //   axios
+    //     .get(`${process.env.REACT_APP_BACKEND_URL}/allmedicines/${id}`)
+    //     .then((res) => {
+    //       // console.log(res.data.oneItem[0].name);
+    //       setData(res.data.oneItem[0]);
+    //     })
+    //     .catch((err) => console.log(err));
+    // }, [id]);
 
 
       const editStyle ={
@@ -48,10 +65,18 @@ function AddtoCart() {
             <br />
             <i>*Delivery Changes if applicable will be applied at checkout</i>
             <br />
-            <button className="main-cart-btn-home edit-btn-home"
-              style={editStyle}>
+            {data.cartAdded? (
+              <button className="main-cart-btn-home edit-btn-home" style={{...editStyle, backgroundColor: "#e70000"}} onClick={()=>addToCart(data.id)}>
+                  Remove From Cart
+              </button>
+            ):(
+              <button className="main-cart-btn-home edit-btn-home" style={editStyle} onClick={()=>addToCart(data.id)}>
+                Add to cart
+              </button>
+            )}
+            {/* <button className="main-cart-btn-home edit-btn-home" style={editStyle}>
               Add to cart
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

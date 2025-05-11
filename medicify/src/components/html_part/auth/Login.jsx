@@ -18,8 +18,8 @@ function Login() {
         
         if(result.data.message === "Successful"){
           navigate('/home')
-          
-          localStorage.setItem("user", JSON.stringify(result.data.user));
+
+          localStorage.setItem("medicify_user", JSON.stringify(result.data.user));
 
           alert('Login Successfull!\n Redirecting to home page!')
           window.location.reload(); 

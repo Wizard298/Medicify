@@ -17,19 +17,19 @@ const Navbar = ({searchQuery, setSearchQuery}) => {
 
 
   useEffect(() => {
-    const loggedInUser = localStorage.getItem("user");
+    const loggedInUser = localStorage.getItem("medicify_user");
     if (loggedInUser) {
         setUser(JSON.parse(loggedInUser)); // Parse user data
     }
   }, []);
 
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const handleResponsive = () => {
     setOpen(!open);
   }
 
   const handleLogout = () => {
-    localStorage.removeItem("user"); // Clear user data
+    localStorage.removeItem("medicify_user"); // Clear user data
 
     alert("Logged Out Successfully!...")
     setUser(null); // Reset state
