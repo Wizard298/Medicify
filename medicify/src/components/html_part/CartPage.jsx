@@ -30,6 +30,17 @@ function CartPage() {
 
   const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY);
 
+  useEffect(() => {
+    const isCheckoutInProgress = localStorage.getItem("isCheckoutInProgress");
+    const isOnCartPage = window.location.pathname === "/cart";
+  
+    if (isCheckoutInProgress && isOnCartPage) {
+      alert("You returned without completing the payment.");
+      localStorage.removeItem("isCheckoutInProgress");
+    }
+  }, []);
+  
+
   // payment logic
   const handleCheckout = async () => {
     const stripe = await stripePromise;
@@ -44,6 +55,7 @@ function CartPage() {
     );
 
     const session = await response.json();
+    localStorage.setItem("isCheckoutInProgress", "true");
     stripe.redirectToCheckout({ sessionId: session.id });
   };
 

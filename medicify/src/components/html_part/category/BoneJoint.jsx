@@ -34,10 +34,10 @@ function BoneJoint() {
                             <span className="cart-price">MRP:</span>
                             <span className="cart-discount">Rs.{product.price}</span>
                         </div>
+                        <div className='edit-cart-btn-home'>
+                            <button className="main-cart-btn-home edit-btn-home">Add to cart</button>
+                        </div>
                     </Link>
-                    <div className='edit-cart-btn-home'>
-                        <button className="main-cart-btn-home edit-btn-home">Add to cart</button>
-                    </div>
                 </div>
             </React.Fragment>
         ))}

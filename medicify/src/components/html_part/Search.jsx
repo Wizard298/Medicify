@@ -13,11 +13,21 @@ function Search({ searchQuery }) {
 
       {filteredData && filteredData.length === 0 ? (
         <>
-          <h1 className="list-heading" style={{margin: "21px 16px", marginBottom: "1px", width: "95%"}}>No Result Found!</h1>
+          <h1
+            className="list-heading"
+            style={{ margin: "21px 16px", marginBottom: "1px", width: "95%" }}
+          >
+            No Result Found!
+          </h1>
         </>
       ) : (
         <>
-          <h1 className="list-heading" style={{margin: "21px 16px", marginBottom: "5px", width: "95%"}}>Result based on search...</h1>
+          <h1
+            className="list-heading"
+            style={{ margin: "21px 16px", marginBottom: "5px", width: "95%" }}
+          >
+            Result based on search...
+          </h1>
           <div className="box">
             <div className="box2">
               {filteredData.map((product) => (
@@ -37,12 +47,12 @@ function Search({ searchQuery }) {
                           Rs.{product.price}
                         </span>
                       </div>
+                      <div className="edit-cart-btn-home">
+                        <button className="main-cart-btn-home edit-btn-home">
+                          Add to cart
+                        </button>
+                      </div>
                     </Link>
-                    <div className="edit-cart-btn-home">
-                      <button className="main-cart-btn-home edit-btn-home">
-                        Add to cart
-                      </button>
-                    </div>
                   </div>
                 </React.Fragment>
               ))}

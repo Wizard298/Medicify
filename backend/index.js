@@ -9,6 +9,8 @@ const MedicineList = require('./models/mod')
 const loginList = require('./models/loginMod')
 const Order = require('./models/orderMod')
 
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+
 
 const app = express()
 
@@ -179,27 +181,19 @@ app.post('/payment/create-checkout-session', async (req, res) => {
             unit_amount: Math.round(item.price * 100),
         },
         // quantity: item.quantity,
+        quantity: 1,
     }));
 
 
     try {
-        // ✅ Create a new order
-        const order = new Order({
-            userEmail: email,
-            cartItems: filterItems,
-            totalAmount,
-            status: "placed",
-        });
-        await order.save();
-
         const session = await stripe.checkout.sessions.create({
             payment_method_types: ['card'],
             line_items,
             mode: 'payment',
             customer_email: email,
-            metadata: {
-                orderId: order._id.toString(), // You can retrieve it later from webhook
-            },
+            // metadata: {
+            //     orderId: order._id.toString(), // You can retrieve it later from webhook
+            // },
             success_url: `${process.env.CLIENT_URL}/success`,
             cancel_url: `${process.env.CLIENT_URL}/cancel`,
         });
@@ -221,6 +215,50 @@ app.get('/payment/success', async (req, res) => {
     } catch (err) {
         console.error(err);
         res.status(500).send("Error fetching orders");
+    }
+});
+
+
+// Save order only after successful payment
+app.post('/payment/save-order', async (req, res) => {
+    const { email, cartItems, totalAmount } = req.body;
+
+    try {
+        const order = new Order({
+            userEmail: email,
+            cartItems,
+            totalAmount,
+            status: "placed",
+        });
+
+        await order.save();
+        res.status(201).send("Order saved successfully");
+    } catch (err) {
+        console.error(err);
+        res.status(500).send("Failed to save order");
+    }
+});
+
+
+app.get('/my-orders/:email', async (req, res) => {
+    try {
+        const email = req.params.email;
+        const orders = await Order.find({ userEmail: email }).sort({ createdAt: -1 });
+        res.json(orders);
+    } catch (err) {
+        console.error('Failed to fetch user orders:', err);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+});
+
+app.delete('/my-orders/:orderId', async (req, res) => {
+    try {
+        const { orderId } = req.params;
+        const deletedOrder = await Order.findByIdAndDelete(orderId);
+        if (!deletedOrder) return res.status(404).json({ message: 'Order not found' });
+        res.json({ message: 'Order deleted successfully' });
+    } catch (err) {
+        res.status(500).json({ error: 'Failed to delete order' });
     }
 });
 

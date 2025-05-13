@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { Ayurvedic1 } from "../../expi/productList";
 
 function Ayurvedic() {
-    
   return (
     <>
       <h1 className="list-heading">Ayurvedic</h1>
@@ -29,11 +28,20 @@ function Ayurvedic() {
                     <span className="cart-price">MRP:</span>
                     <span className="cart-discount">Rs.{product.price}</span>
                   </div>
-                    <div className="edit-cart-btn-home">
-                        <button className="main-cart-btn-home edit-btn-home">
-                            Add To Cart
-                        </button>
-                    </div>
+                  <div className="edit-cart-btn-home">
+                    {/* {product.cartAdded?(
+                      <button className="main-cart-btn-home edit-btn-home" style={{backgroundColor: "#e70000"}}>
+                        Remove From Cart
+                      </button>
+                    ):(
+                      <button className="main-cart-btn-home edit-btn-home">
+                        Add To Cart
+                      </button>
+                    )} */}
+                    <button className="main-cart-btn-home edit-btn-home">
+                      Add To Cart
+                    </button>
+                  </div>
                 </Link>
               </div>
             </React.Fragment>

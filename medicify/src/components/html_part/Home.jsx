@@ -74,10 +74,10 @@ function Home() {
                             <span className="cart-price-home">MRP:</span>
                             <span className="cart-discount-home">Rs.{product.price}</span>
                         </div>
+                        <div className='edit-cart-btn-home'>
+                            <button className="main-cart-btn-home">Add to cart</button>
+                        </div>
                     </Link>
-                    <div className='edit-cart-btn-home'>
-                        <button className="main-cart-btn-home">Add to cart</button>
-                    </div>
                 </div>
             </React.Fragment>
         ))}    
@@ -140,10 +140,10 @@ function Home() {
                             <span className="cart-price-home">MRP:</span>
                             <span className="cart-discount-home">Rs.{product.price}</span>
                         </div>
+                        <div className='edit-cart-btn-home'>
+                            <button className="main-cart-btn-home">Add to cart</button>
+                        </div>
                     </Link>
-                    <div className='edit-cart-btn-home'>
-                        <button className="main-cart-btn-home">Add to cart</button>
-                    </div>
                 </div>
             </React.Fragment>
         ))}
@@ -201,10 +201,10 @@ function Home() {
                             <span className="cart-price-home">MRP:</span>
                             <span className="cart-discount-home">Rs.{product.price}</span>
                         </div>
+                        <div className='edit-cart-btn-home'>
+                            <button className="main-cart-btn-home">Add to cart</button>
+                        </div>
                     </Link>
-                    <div className='edit-cart-btn-home'>
-                        <button className="main-cart-btn-home">Add to cart</button>
-                    </div>
                 </div>
             </React.Fragment>
         ))}

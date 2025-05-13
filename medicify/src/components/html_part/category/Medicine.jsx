@@ -63,10 +63,10 @@ function Medicine() {
               <span className="cart-price">Best Price</span>
               <span className="cart-discount">Rs.{item.price}</span>
             </div>
+            <button className="main-cart-btn-home edit-btn-home">
+              Add to cart
+            </button>
           </Link>
-          <button className="main-cart-btn-home edit-btn-home">
-            Add to cart
-          </button>
         </div>
       </React.Fragment>
     );

@@ -45,6 +45,7 @@ function Cart({children}) {
     }
 
     const clearCart = () => {
+      // alert("Are you sure want to delete all items?")
       return dispatch({
           type: "CLEAR_CART"
       });

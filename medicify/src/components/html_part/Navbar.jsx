@@ -71,6 +71,7 @@ const Navbar = ({searchQuery, setSearchQuery}) => {
                         </svg>
                         <div className="dropdown-content">
                             <Link to="/profile" className='dropdown-profile'>View Profile</Link>
+                            <Link to="/myOrder" className='dropdown-profile' style={{borderRadius: "0"}}>View Orders</Link>
                             <Link onClick={handleLogout}  className='dropdown-logout dropdown-radius'>Log Out</Link>
                         </div>
                         </div>
@@ -123,6 +124,7 @@ const Navbar = ({searchQuery, setSearchQuery}) => {
                         </svg>
                         <div className="dropdown-content">
                             <Link to="/profile" className='dropdown-profile'>View Profile</Link>
+                            <Link to="/myOrder" className='dropdown-profile' style={{borderRadius: "0"}}>View Orders</Link>
                             <Link onClick={handleLogout}  className='dropdown-logout dropdown-radius'>Log Out</Link>
                         </div>
                         </div>

@@ -34,6 +34,9 @@ import MoreDetails from './components/html_part/footer_comp/MoreDetails';
 
 import ScrollToTop from './components/html_part/ScrollToTop';
 import Search from './components/html_part/Search';
+import Cancel from './components/html_part/payment/Cancel';
+import Success from './components/html_part/payment/Success';
+import MyOrder from './components/html_part/MyOrder';
 
 
 function Main() {
@@ -65,6 +68,7 @@ function Main() {
 
           <Route path="/cart" element={<CartPage/>} />
           <Route path="/addtocart/:id" element={<AddtoCart/>} />
+          <Route path="/myOrder" element={<MyOrder/>} />
           
           <Route path="/home/about" element={<AboutUs/>} />
           <Route path="/home/services" element={<Services/>} />
@@ -75,6 +79,11 @@ function Main() {
           <Route path="/home/details" element={<MoreDetails/>} />
 
           <Route path="/home/search" element={<Search searchQuery={searchQuery} />} />
+
+          {/* payment */}
+          <Route path="/success" element={<Success/>} />
+          <Route path="/cancel" element={<Cancel/>} />
+
 
         </Routes>
     
