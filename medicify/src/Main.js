@@ -37,6 +37,7 @@ import Search from './components/html_part/Search';
 import Cancel from './components/html_part/payment/Cancel';
 import Success from './components/html_part/payment/Success';
 import MyOrder from './components/html_part/MyOrder';
+import Profile from './components/html_part/Profile';
 
 
 function Main() {
@@ -52,6 +53,7 @@ function Main() {
         <Routes>
           <Route path="/" element={<SignUp/>} />
           <Route path="/login" element={<Login/>} />
+          <Route path="/profile" element={<Profile/>} />
           <Route path="/home" element={<Home/>} />
           
           <Route path="/health" element={<Health/>} />

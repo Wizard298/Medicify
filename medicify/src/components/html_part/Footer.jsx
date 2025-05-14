@@ -47,7 +47,7 @@ function Footer() {
           </div>
         </div>
         <div className="copyright">
-          Copyright© 2024. All Rights Reserved.
+          Copyright© 2024-2025. All Rights Reserved.
         </div>
       </div>
     </>
